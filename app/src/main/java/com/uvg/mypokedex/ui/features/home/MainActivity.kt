@@ -1,4 +1,4 @@
-package com.uvg.mypokedex
+package com.uvg.mypokedex.ui.features.home
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
