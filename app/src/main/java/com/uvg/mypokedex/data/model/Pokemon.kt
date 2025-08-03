@@ -11,5 +11,7 @@ data class Pokemon(
     val accuInit: Int, //initial accuracy
     var accu: Int,
     val evaInit: Int, //initial evasion
-    var eva: Int
+    var eva: Int,
+    val name: String,
+    val type: String
 )
