@@ -1,4 +1,3 @@
 package com.uvg.mypokedex.ui.components
 
-class PokemonCard {
-}
+import androidx.compo
