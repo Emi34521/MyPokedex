@@ -11,13 +11,10 @@ import androidx.compose.ui.text.font.FontWeight
 import coil.compose.AsyncImage
 import com.uvg.mypokedex.data.model.Pokemon
 
-
-
 @Composable
 fun PokemonCard(
     pokemon: Pokemon,
-    typeColor: Color = Color.Gray // modo default de pokemon
-
+    typeColor: Color = Color.Gray// modo default de pokemon
 ) {
     // URL oficial basada en el ID del Pokémon
     val imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png"
@@ -47,18 +44,23 @@ fun PokemonCard(
                     .padding(8.dp) // espaciado de la imagen
             )
 
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(8.dp))// espacio entre la imagen y el texto
 
             // Nombre del pokemon
-            Text(
-                text = pokemon.name.replaceFirstChar { it.uppercase() },
-                style = MaterialTheme.typography.bodyLarge,
-                fontWeight = FontWeight.Bold,
-                modifier = Modifier.align(Alignment.CenterHorizontally)
+            Row(modifier = Modifier.align(Alignment.CenterHorizontally)) {
+                Text(pokemon.id.toString(),
+                    style = MaterialTheme.typography.bodyLarge
+                )
+                Text(
+                    text = pokemon.name.replaceFirstChar { it.uppercase() },// Capitaliza primera letra
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.weight(1f)
+                    // Ocupa el espacio disponible y empuja a los otros elementos
+                )
+            }
 
-            )
-
-            // la clase de pokemon
+            // Clase del pokemon
             Text(
                 text = "Tipo: ${pokemon.type}",
                 style = MaterialTheme.typography.bodyMedium
