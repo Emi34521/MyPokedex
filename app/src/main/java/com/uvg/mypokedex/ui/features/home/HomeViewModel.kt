@@ -1,5 +1,4 @@
 package com.uvg.mypokedex.ui.features.home
-
 import com.uvg.mypokedex.data.model.Pokemon
 
 class HomeViewModel {

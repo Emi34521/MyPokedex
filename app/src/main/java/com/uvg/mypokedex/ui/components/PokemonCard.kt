@@ -37,7 +37,7 @@ fun PokemonCard(
         ) {
             // Imagen del pokemon
             AsyncImage(
-                model = imageUrl, // URL de la imagen del pokemon
+               model = imageUrl, // URL de la imagen del pokemon
                 contentDescription = "Imagen de ${pokemon.name}",
                 modifier = Modifier
                     .size(120.dp) // Tamaño de la imagen

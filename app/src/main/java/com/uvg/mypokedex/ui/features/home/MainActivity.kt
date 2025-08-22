@@ -9,6 +9,7 @@ import com.uvg.mypokedex.ui.theme.MyPokedexTheme
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Modifier
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
