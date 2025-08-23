@@ -25,12 +25,14 @@ Implementar UnstablePokemonList en MainActivity.kt
 ¿Cómo convierto una lista mutable a inmutable?
 
 */
+//probablemente toda esta sección tenga que ser comentada antes de agregar las otras implementaciones
 fun UnstablePokemonList(pokemons: List<String>) {
     @Composable
     fun UnstablePokemonList(pokemons: List<String>) {
         // 1. Idempotencia
         val randomColor by remember {
             mutableStateOf(String.format("#%06x", Random.nextInt(0, 0xFFFFFF)))
+
         }
 
         // 2. SideEffect para logs controlados
