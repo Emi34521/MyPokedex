@@ -2,16 +2,28 @@ package com.uvg.mypokedex.data.model
 
 data class Pokemon(
     val id: Int,
-    val hpMax: Int, //max health-points
-    var hp: Int,
-    val defInit: Int, //initial defense
-    var def: Int,
-    val speedInit: Int,
-    var speed: Int,
-    val accuInit: Int, //initial accuracy
-    var accu: Int,
-    val evaInit: Int, //initial evasion
-    var eva: Int,
     val name: String,
-    val type: String
+    val types: List<String>,
+    val weight: Float,       // kg
+    val height: Float,       // en m
+    val stats: Stats         // objeto con los stats
+)
+
+data class Stats(
+    val hp: Int,
+    val attack: Int,
+    val defense: Int,
+    val specialAttack: Int,
+    val specialDefense: Int,
+    val speed: Int
+)
+
+// 🔹 Función que recorre stats
+fun Stats.toMap(): Map<String, Int> = mapOf(
+    "HP" to hp,
+    "Attack" to attack,
+    "Defense" to defense,
+    "Sp. Atk" to specialAttack,
+    "Sp. Def" to specialDefense,
+    "Speed" to speed
 )

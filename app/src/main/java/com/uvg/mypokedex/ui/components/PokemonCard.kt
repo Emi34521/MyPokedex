@@ -16,7 +16,7 @@ fun PokemonCard(
     pokemon: Pokemon,
     typeColor: Color = Color.Gray// modo default de pokemon
 ) {
-    // URL oficial basada en el ID del Pokémon
+    // toma url de la imagen de pokemon,
     val imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png"
 
     Card(
@@ -32,12 +32,12 @@ fun PokemonCard(
         Column(
             modifier = Modifier
                 .padding(16.dp), // Margen interno de 16dp
-            horizontalAlignment = Alignment.CenterHorizontally, // Centra el contenido horizontalmente
-            verticalArrangement = Arrangement.Center // Centra verticalmente
+            horizontalAlignment = Alignment.CenterHorizontally, // centra horizontalmente
+            verticalArrangement = Arrangement.Center // centra verticalmente
         ) {
-            // Imagen del pokemon
+            // imagen del pokemon
             AsyncImage(
-               model = imageUrl, // URL de la imagen del pokemon
+               model = imageUrl, // URL mencionada anteriormente
                 contentDescription = "Imagen de ${pokemon.name}",
                 modifier = Modifier
                     .size(120.dp) // Tamaño de la imagen
@@ -56,14 +56,15 @@ fun PokemonCard(
                     style = MaterialTheme.typography.bodyLarge,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.weight(1f)
-                    // Ocupa el espacio disponible y empuja a los otros elementos
+                    // Ocupa el espacio disponible y empuja el resto
                 )
             }
 
-            // Clase del pokemon
+            // Aquí se obtenía un error porque no reconocía "type" para resolver este error se usó IA cuyo promp fué que no se reconocía type
             Text(
-                text = "Tipo: ${pokemon.type}",
+                text = "Tipo: ${pokemon.types.joinToString(", ")}",
                 style = MaterialTheme.typography.bodyMedium
+
             )
         }
     }
