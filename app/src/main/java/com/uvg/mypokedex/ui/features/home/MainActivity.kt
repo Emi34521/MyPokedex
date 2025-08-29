@@ -4,18 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Scaffold
-import com.uvg.mypokedex.ui.theme.MyPokedexTheme
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.uvg.mypokedex.data.model.Pokemon
 import com.uvg.mypokedex.ui.components.UnstablePokemonList
-
+import com.uvg.mypokedex.ui.theme.MyPokedexTheme
 
 
 class MainActivity : ComponentActivity() {
@@ -31,10 +24,8 @@ class MainActivity : ComponentActivity() {
                     HomeScreen(modifier = Modifier.padding(innerPadding))
 
                     // Muestra tu pantalla de prueba
-                    UnstablePokemonList( pokemons = listOf("Pikachu", "Bulbasaur", "Charmander"))
-
+                    //UnstablePokemonList(pokemons = listOf("Pikachu", "Bulbasaur", "Charmander"))
                 }
-
             }
         }
     }

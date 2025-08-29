@@ -1,10 +1,25 @@
 package com.uvg.mypokedex.ui.detail
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.FavoriteBorder
-import androidx.compose.material3.*
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ProgressIndicatorDefaults
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,13 +33,14 @@ fun PokemonDetailScreen(
     pokemon: Pokemon,
     onBack: () -> Unit = {},
     onToggleFavorite: () -> Unit = {}
+    // takes no arguments and returns nothing
 ) {
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // 🔹 Barra superior
+        // Barra superior
         TopBar(
             name = pokemon.name,
             onBack = onBack,
@@ -44,12 +60,12 @@ fun PokemonDetailScreen(
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 🔹 Medidas de peso y altura
+        // Medidas de peso y altura
         PokemonMeasurements(weight = pokemon.weight, height = pokemon.height)
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 🔹 Stats con barras
+        // Stats con barras
         Column {
             pokemon.stats.toMap().forEach { (name, value) ->
                 PokemonStatRow(statName = name, value = value, maxValue = 255)
@@ -67,7 +83,7 @@ fun TopBar(name: String, onBack: () -> Unit, onToggleFavorite: () -> Unit) {
         title = { Text(name.replaceFirstChar { it.uppercase() }) },
         navigationIcon = {
             IconButton(onClick = onBack) {
-                Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
             }
         },
         actions = {
@@ -112,10 +128,13 @@ fun PokemonStatRow(statName: String, value: Int, maxValue: Int) {
         }
         //Prompt: Como agregar una barra de progresión en jetpack compose
         LinearProgressIndicator(
-            progress = value / maxValue.toFloat(),
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(8.dp)
+        progress = { value / maxValue.toFloat() },
+        modifier = Modifier
+                        .fillMaxWidth()
+                        .height(8.dp),
+        color = ProgressIndicatorDefaults.linearColor,
+        trackColor = ProgressIndicatorDefaults.linearTrackColor,
+        strokeCap = ProgressIndicatorDefaults.LinearStrokeCap,
         )
     }
 }

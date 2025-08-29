@@ -14,7 +14,7 @@ import kotlin.random.Random
 // 2. ¿Tiene efectos secundarios?
 // 3. ¿Usa un tipo de dato inestable (List) como parámetro?
 
-@Composable
+
 //en esta parte se utilizó IA para generar pedazos del código
 /*
 preguntas ¿Por qué la terminal no muestra los resultados del log?
@@ -26,24 +26,23 @@ Implementar UnstablePokemonList en MainActivity.kt
 
 */
 //probablemente toda esta sección tenga que ser comentada antes de agregar las otras implementaciones
+
+@Composable
 fun UnstablePokemonList(pokemons: List<String>) {
-    @Composable
-    fun UnstablePokemonList(pokemons: List<String>) {
-        // 1. Idempotencia
-        val randomColor by remember {
-            mutableStateOf(String.format("#%06x", Random.nextInt(0, 0xFFFFFF)))
+    // 1. Idempotencia
+    val randomColor by remember {
+        mutableStateOf(String.format("#%06x", Random.nextInt(0, 0xFFFFFF)))
 
-        }
+    }
 
-        // 2. SideEffect para logs controlados
-        SideEffect {
-            println("StablePokemonList composed with color $randomColor")
-        }
+    // 2. SideEffect para logs controlados
+    SideEffect {
+        println("StablePokemonList composed with color $randomColor")
+    }
 
-        val stablePokemons: ImmutableList<String> = pokemons.toImmutableList()
+    val stablePokemons: ImmutableList<String> = pokemons.toImmutableList()
 
-        Button(onClick = { /* aquí ya no importa recomposición extra */ }) {
-            Text(text = "Tengo ${stablePokemons.size} Pokémon favoritos")
-        }
+    Button(onClick = { /* aquí ya no importa recomposición extra */ }) {
+        Text(text = "Tengo ${stablePokemons.size} Pokémon favoritos")
     }
 }
