@@ -18,6 +18,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ProgressIndicatorDefaults
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
@@ -78,8 +79,15 @@ fun PokemonDetailScreen(
 //Prompt: El programa esta avisando que topappbar es una función experimental que puede cambiar, como puedo arreglar esto?
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopBar(name: String, onBack: () -> Unit, onToggleFavorite: () -> Unit) {
+fun TopBar(
+    modifier: Modifier = Modifier,
+    name: String,
+    onBack: () -> Unit,
+    onToggleFavorite: () -> Unit
+
+) {
     TopAppBar(
+        modifier = modifier,
         title = { Text(name.replaceFirstChar { it.uppercase() }) },
         navigationIcon = {
             IconButton(onClick = onBack) {
