@@ -9,6 +9,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.uvg.mypokedex.data.model.Pokemon
 import com.uvg.mypokedex.data.model.Stats
+import com.uvg.mypokedex.ui.components.PokemonSearchBar
 import com.uvg.mypokedex.ui.components.UnstablePokemonList
 import com.uvg.mypokedex.ui.theme.MyPokedexTheme
 import com.uvg.mypokedex.ui.detail.*
@@ -29,7 +30,7 @@ class MainActivity : ComponentActivity() {
 
                     // Muestra tu pantalla de prueba
                     //UnstablePokemonList(pokemons = listOf("Pikachu", "Bulbasaur", "Charmander"))
-                    PokemonDetailScreen(Pokemon(
+                    /*PokemonDetailScreen(Pokemon(
                         id = 1,
                         name = "Bulbasaur",
                         types = listOf("Grass", "Poison"),
@@ -43,7 +44,9 @@ class MainActivity : ComponentActivity() {
                             specialDefense = 65,
                             speed = 45
                         )
-                    ))
+                    )) */
+                    PokemonSearchBar(modifier = Modifier.padding (innerPadding),allPokemons = HomeViewModel().getPokemonList())
+
                 }
             }
         }
