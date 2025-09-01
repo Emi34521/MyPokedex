@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -18,10 +19,13 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ProgressIndicatorDefaults
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -29,13 +33,17 @@ import coil.compose.AsyncImage
 import com.uvg.mypokedex.data.model.Pokemon
 import com.uvg.mypokedex.data.model.toMap
 
+
 @Composable
 fun PokemonDetailScreen(
     pokemon: Pokemon,
     onBack: () -> Unit = {},
-    onToggleFavorite: () -> Unit = {}
-    // takes no arguments and returns nothing
+    viewModel: PokemonDetailViewModel = PokemonDetailViewModel(),
+    // Inyección de dependencias, buena practica modular
+    onToggleFavorite: (Boolean) -> Unit // recibe bool devuelve nada
 ) {
+    var isFavorite by remember(viewModel.getIsFavourite()) { mutableStateOf(viewModel.getIsFavourite()) }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -45,7 +53,13 @@ fun PokemonDetailScreen(
         TopBar(
             name = pokemon.name,
             onBack = onBack,
-            onToggleFavorite = onToggleFavorite
+            isFavorite = isFavorite,
+            onToggleFavorite = {
+                val newFavoriteStatus = !isFavorite
+                // negar estado actual al hacer click
+                isFavorite = newFavoriteStatus
+                onToggleFavorite(newFavoriteStatus)
+            }
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -83,8 +97,8 @@ fun TopBar(
     modifier: Modifier = Modifier,
     name: String,
     onBack: () -> Unit,
-    onToggleFavorite: () -> Unit
-
+    onToggleFavorite: () -> Unit,
+    isFavorite: Boolean
 ) {
     TopAppBar(
         modifier = modifier,
@@ -95,15 +109,23 @@ fun TopBar(
             }
         },
         actions = {
-            FavoriteButton(onClick = onToggleFavorite)
+            FavoriteButton(isFavorite = isFavorite, onClick = onToggleFavorite)
         }
     )
 }
 
 @Composable
-fun FavoriteButton(onClick: () -> Unit) {
-    IconButton(onClick = onClick) {
-        Icon(Icons.Default.FavoriteBorder, contentDescription = "Favorite")
+fun FavoriteButton(
+    isFavorite: Boolean, // estado icono
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    IconButton(onClick = onClick, modifier = modifier) {
+        Icon(
+            imageVector = if (isFavorite) Icons.Filled.Favorite else Icons.Default.FavoriteBorder,
+            // cambiar icono y descripcion segun estado
+            contentDescription = if (isFavorite) "Remove from favorites" else "Add to favorites"
+        )
     }
 }
 
