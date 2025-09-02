@@ -15,39 +15,50 @@ import com.uvg.mypokedex.ui.theme.MyPokedexTheme
 import com.uvg.mypokedex.ui.detail.*
 import com.uvg.mypokedex.ui.features.home.HomeViewModel
 
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        // calcula el espaciado para que el contenido no tenga problemas con
-        // las barras de estado y navegación del dispositivo
+
         setContent {
             MyPokedexTheme {
+                // Opción 1 Utiliza HomeScreen con el grid y boton flotante
+                HomeScreen()
+
+                // Opción 2, Usar la barra de búsqueda
+                /*
                 Scaffold { innerPadding ->
-                    // espaciado proporcionado por Scaffold para evitar problemas
-                    HomeScreen(modifier = Modifier.padding(innerPadding))
-
-                    // Muestra tu pantalla de prueba
-                    //UnstablePokemonList(pokemons = listOf("Pikachu", "Bulbasaur", "Charmander"))
-                    /*PokemonDetailScreen(Pokemon(
-                        id = 1,
-                        name = "Bulbasaur",
-                        types = listOf("Grass", "Poison"),
-                        weight = 6.9f,
-                        height = 0.7f,
-                        stats = Stats(
-                            hp = 45,
-                            attack = 49,
-                            defense = 49,
-                            specialAttack = 65,
-                            specialDefense = 65,
-                            speed = 45
-                        )
-                    )) */
-                    PokemonSearchBar(modifier = Modifier.padding (innerPadding),allPokemons = HomeViewModel().getPokemonList())
-
+                    PokemonSearchBar(
+                        modifier = Modifier.padding(innerPadding),
+                        allPokemons = HomeViewModel().getPokemonList()
+                    )
                 }
+                */
+
+                // Opción 3
+                // UnstablePokemonList(pokemons = listOf("Pikachu", "Bulbasaur", "Charmander"))
+
+                // Opción 4:
+                /*
+                PokemonDetailScreen(Pokemon(
+                    id = 1,
+                    name = "Bulbasaur",
+                    types = listOf("Grass", "Poison"),
+                    weight = 6.9f,
+                    height = 0.7f,
+                    stats = Stats(
+                        hp = 45,
+                        attack = 49,
+                        defense = 49,
+                        specialAttack = 65,
+                        specialDefense = 65,
+                        speed = 45
+                    )
+                ), onToggleFavorite = { isFavorite ->
+                    // Manejo del estado de favorito
+                    println("Pokemon marcado como favorito: $isFavorite")
+                })
+                */
             }
         }
     }
