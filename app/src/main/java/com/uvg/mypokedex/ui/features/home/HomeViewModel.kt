@@ -1,9 +1,51 @@
 package com.uvg.mypokedex.ui.features.home
 
+import android.content.Context
+import androidx.lifecycle.ViewModel
 import com.uvg.mypokedex.data.model.Pokemon
 import com.uvg.mypokedex.data.model.Stats
+import kotlinx.serialization.json.Json
+import org.json.JSONObject
 
-class HomeViewModel {
+class HomeViewModel(private val context: Context): ViewModel() {
+
+    //variable para guardar la lista de pokemons
+    val pokemonList = mutableListOf<Pokemon>()
+
+    private var currentPage = 0
+    private val pageSize = 20
+
+    // Construye dinámicamente el nombre del archivo a partir de la página
+    private fun getFileNameForPage(page: Int): String {
+        // El nombre del archivo sigue un patrón específico
+        val start = page * pageSize + 1
+        val end = (page + 1) * pageSize
+        // "pokemon_001_20.json" es el nombre del archivo para la página 0
+        return "pokemon_${start.toString().padStart(3, '0')}_${end}.json"
+    }
+    // Leer archivo desde assets
+    private fun loadJsonFromAssets(fileName: String): String {
+        val inputStream = context.assets.open(fileName)
+        return inputStream.bufferedReader().use { it.readText() }
+    }
+    // Función principal para cargar más Pokémon
+    fun loadMorePokemon() {
+        try {
+            val fileName = getFileNameForPage(currentPage)
+            val jsonString = loadJsonFromAssets(fileName)
+
+            val newPokemons = Json.decodeFromString<List<Pokemon>>(jsonString)
+
+            pokemonList.addAll(newPokemons)
+
+            currentPage++  // avanzar a la siguiente página
+        } catch (e: Exception) {
+            e.printStackTrace()
+            // Si no encuentra más archivos, no hace nada
+        }
+    }
+
+
     fun getPokemonList(): List<Pokemon> {
         return listOf(
             Pokemon(
