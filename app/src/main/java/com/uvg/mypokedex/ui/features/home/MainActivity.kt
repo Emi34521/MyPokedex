@@ -45,8 +45,13 @@ class MainActivity : ComponentActivity() {
                             speed = 45
                         )
                     )) */
-                    PokemonSearchBar(modifier = Modifier.padding (innerPadding),allPokemons = HomeViewModel().getPokemonList())
-
+                    setContent {
+                        MyPokedexTheme {
+                            Scaffold { innerPadding ->
+                                HomeScreen(modifier = Modifier.padding(innerPadding))
+                            }
+                        }
+                    }
                 }
             }
         }

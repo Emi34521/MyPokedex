@@ -1,5 +1,9 @@
 package com.uvg.mypokedex.data.model
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.SerialName
 
+
+@Serializable
 data class Pokemon(
     val id: Int,
     val name: String,
@@ -8,7 +12,7 @@ data class Pokemon(
     val height: Float,       // en m
     val stats: Stats         // objeto con los stats
 )
-
+@Serializable
 data class Stats(
     val hp: Int,
     val attack: Int,
