@@ -28,11 +28,10 @@ fun HomeScreen(
     viewModel: HomeViewModel = HomeViewModel(LocalContext.current.applicationContext as Application)
 ) {
     val pokemonList = viewModel.getPokemons()
-    Log.d("HomeScreen", "Pokemon list size: ${pokemonList.size}") // Add this log
     if (pokemonList.isEmpty()) {
         Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             Text("Loading Pokémon or no Pokémon found...")
-            // You could also put a CircularProgressIndicator here
+
         }
         return // Exit early if the list is empty
     }
