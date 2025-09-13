@@ -1,0 +1,367 @@
+{
+  "range": {
+    "start": 41,
+    "end": 50
+  },
+  "items": [
+    {
+      "id": 41,
+      "name": "zubat",
+      "type": [
+        "poison",
+        "flying"
+      ],
+      "weight": 7.5,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "golbat",
+      "type": [
+        "poison",
+        "flying"
+      ],
+      "weight": 55.0,
+      "height": 1.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "oddish",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 5.4,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "gloom",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 8.6,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "vileplume",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 18.6,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 85
+        },
+        {
+          "name": "special-attack",
+          "value": 110
+        },
+        {
+          "name": "special-defense",
+          "value": 90
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "paras",
+      "type": [
+        "bug",
+        "grass"
+      ],
+      "weight": 5.4,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "parasect",
+      "type": [
+        "bug",
+        "grass"
+      ],
+      "weight": 29.5,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "venonat",
+      "type": [
+        "bug",
+        "poison"
+      ],
+      "weight": 30.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "venomoth",
+      "type": [
+        "bug",
+        "poison"
+      ],
+      "weight": 12.5,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "diglett",
+      "type": [
+        "ground"
+      ],
+      "weight": 0.8,
+      "height": 0.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 10
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 25
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 45
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    }
+  ]
+}

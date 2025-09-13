@@ -1,0 +1,365 @@
+{
+  "range": {
+    "start": 391,
+    "end": 400
+  },
+  "items": [
+    {
+      "id": 391,
+      "name": "monferno",
+      "type": [
+        "fire",
+        "fighting"
+      ],
+      "weight": 22.0,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 64
+        },
+        {
+          "name": "attack",
+          "value": 78
+        },
+        {
+          "name": "defense",
+          "value": 52
+        },
+        {
+          "name": "special-attack",
+          "value": 78
+        },
+        {
+          "name": "special-defense",
+          "value": 52
+        },
+        {
+          "name": "speed",
+          "value": 81
+        }
+      ]
+    },
+    {
+      "id": 392,
+      "name": "infernape",
+      "type": [
+        "fire",
+        "fighting"
+      ],
+      "weight": 55.0,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 76
+        },
+        {
+          "name": "attack",
+          "value": 104
+        },
+        {
+          "name": "defense",
+          "value": 71
+        },
+        {
+          "name": "special-attack",
+          "value": 104
+        },
+        {
+          "name": "special-defense",
+          "value": 71
+        },
+        {
+          "name": "speed",
+          "value": 108
+        }
+      ]
+    },
+    {
+      "id": 393,
+      "name": "piplup",
+      "type": [
+        "water"
+      ],
+      "weight": 5.2,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 53
+        },
+        {
+          "name": "attack",
+          "value": 51
+        },
+        {
+          "name": "defense",
+          "value": 53
+        },
+        {
+          "name": "special-attack",
+          "value": 61
+        },
+        {
+          "name": "special-defense",
+          "value": 56
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 394,
+      "name": "prinplup",
+      "type": [
+        "water"
+      ],
+      "weight": 23.0,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 64
+        },
+        {
+          "name": "attack",
+          "value": 66
+        },
+        {
+          "name": "defense",
+          "value": 68
+        },
+        {
+          "name": "special-attack",
+          "value": 81
+        },
+        {
+          "name": "special-defense",
+          "value": 76
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 395,
+      "name": "empoleon",
+      "type": [
+        "water",
+        "steel"
+      ],
+      "weight": 84.5,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 84
+        },
+        {
+          "name": "attack",
+          "value": 86
+        },
+        {
+          "name": "defense",
+          "value": 88
+        },
+        {
+          "name": "special-attack",
+          "value": 111
+        },
+        {
+          "name": "special-defense",
+          "value": 101
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": 396,
+      "name": "starly",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 2.0,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 30
+        },
+        {
+          "name": "special-attack",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": 397,
+      "name": "staravia",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 15.5,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 398,
+      "name": "staraptor",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 24.9,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 85
+        },
+        {
+          "name": "attack",
+          "value": 120
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 399,
+      "name": "bidoof",
+      "type": [
+        "normal"
+      ],
+      "weight": 20.0,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 59
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 31
+        }
+      ]
+    },
+    {
+      "id": 400,
+      "name": "bibarel",
+      "type": [
+        "normal",
+        "water"
+      ],
+      "weight": 31.5,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 79
+        },
+        {
+          "name": "attack",
+          "value": 85
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 71
+        }
+      ]
+    }
+  ]
+}

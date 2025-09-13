@@ -1,0 +1,360 @@
+{
+  "range": {
+    "start": 21,
+    "end": 30
+  },
+  "items": [
+    {
+      "id": 21,
+      "name": "spearow",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 2.0,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 30
+        },
+        {
+          "name": "special-attack",
+          "value": 31
+        },
+        {
+          "name": "special-defense",
+          "value": 31
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "fearow",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 38.0,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 61
+        },
+        {
+          "name": "special-defense",
+          "value": 61
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "ekans",
+      "type": [
+        "poison"
+      ],
+      "weight": 6.9,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 44
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 54
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "arbok",
+      "type": [
+        "poison"
+      ],
+      "weight": 65.0,
+      "height": 3.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 69
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 79
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "pikachu",
+      "type": [
+        "electric"
+      ],
+      "weight": 6.0,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "raichu",
+      "type": [
+        "electric"
+      ],
+      "weight": 30.0,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 110
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "sandshrew",
+      "type": [
+        "ground"
+      ],
+      "weight": 12.0,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 85
+        },
+        {
+          "name": "special-attack",
+          "value": 20
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "sandslash",
+      "type": [
+        "ground"
+      ],
+      "weight": 29.5,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 110
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "nidoran-f",
+      "type": [
+        "poison"
+      ],
+      "weight": 7.0,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 47
+        },
+        {
+          "name": "defense",
+          "value": 52
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 41
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "nidorina",
+      "type": [
+        "poison"
+      ],
+      "weight": 20.0,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 62
+        },
+        {
+          "name": "defense",
+          "value": 67
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 56
+        }
+      ]
+    }
+  ]
+}

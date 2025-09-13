@@ -1,0 +1,362 @@
+{
+  "range": {
+    "start": 131,
+    "end": 140
+  },
+  "items": [
+    {
+      "id": 131,
+      "name": "lapras",
+      "type": [
+        "water",
+        "ice"
+      ],
+      "weight": 220.0,
+      "height": 2.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 130
+        },
+        {
+          "name": "attack",
+          "value": 85
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "name": "ditto",
+      "type": [
+        "normal"
+      ],
+      "weight": 4.0,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 48
+        },
+        {
+          "name": "attack",
+          "value": 48
+        },
+        {
+          "name": "defense",
+          "value": 48
+        },
+        {
+          "name": "special-attack",
+          "value": 48
+        },
+        {
+          "name": "special-defense",
+          "value": 48
+        },
+        {
+          "name": "speed",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "name": "eevee",
+      "type": [
+        "normal"
+      ],
+      "weight": 6.5,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "name": "vaporeon",
+      "type": [
+        "water"
+      ],
+      "weight": 29.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 130
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 110
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "name": "jolteon",
+      "type": [
+        "electric"
+      ],
+      "weight": 24.5,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 110
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 130
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "name": "flareon",
+      "type": [
+        "fire"
+      ],
+      "weight": 25.0,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 130
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 110
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "name": "porygon",
+      "type": [
+        "normal"
+      ],
+      "weight": 36.5,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "name": "omanyte",
+      "type": [
+        "rock",
+        "water"
+      ],
+      "weight": 7.5,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 40
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "name": "omastar",
+      "type": [
+        "rock",
+        "water"
+      ],
+      "weight": 35.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 125
+        },
+        {
+          "name": "special-attack",
+          "value": 115
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "name": "kabuto",
+      "type": [
+        "rock",
+        "water"
+      ],
+      "weight": 11.5,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 30
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 90
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 45
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    }
+  ]
+}

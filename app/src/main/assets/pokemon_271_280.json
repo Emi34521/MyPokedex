@@ -1,0 +1,367 @@
+{
+  "range": {
+    "start": 271,
+    "end": 280
+  },
+  "items": [
+    {
+      "id": 271,
+      "name": "lombre",
+      "type": [
+        "water",
+        "grass"
+      ],
+      "weight": 32.5,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "name": "ludicolo",
+      "type": [
+        "water",
+        "grass"
+      ],
+      "weight": 55.0,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 273,
+      "name": "seedot",
+      "type": [
+        "grass"
+      ],
+      "weight": 4.0,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 40
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 274,
+      "name": "nuzleaf",
+      "type": [
+        "grass",
+        "dark"
+      ],
+      "weight": 28.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": 275,
+      "name": "shiftry",
+      "type": [
+        "grass",
+        "dark"
+      ],
+      "weight": 59.6,
+      "height": 1.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 90
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 276,
+      "name": "taillow",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 2.3,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 30
+        },
+        {
+          "name": "special-attack",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 277,
+      "name": "swellow",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 19.8,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 85
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 125
+        }
+      ]
+    },
+    {
+      "id": 278,
+      "name": "wingull",
+      "type": [
+        "water",
+        "flying"
+      ],
+      "weight": 9.5,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 30
+        },
+        {
+          "name": "defense",
+          "value": 30
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 279,
+      "name": "pelipper",
+      "type": [
+        "water",
+        "flying"
+      ],
+      "weight": 28.0,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 280,
+      "name": "ralts",
+      "type": [
+        "psychic",
+        "fairy"
+      ],
+      "weight": 6.6,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 28
+        },
+        {
+          "name": "attack",
+          "value": 25
+        },
+        {
+          "name": "defense",
+          "value": 25
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    }
+  ]
+}
