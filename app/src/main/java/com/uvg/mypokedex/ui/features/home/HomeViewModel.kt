@@ -1,34 +1,36 @@
 package com.uvg.mypokedex.ui.features.home
 
-import android.content.Context
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import com.uvg.mypokedex.data.model.Pokemon
-import com.uvg.mypokedex.data.model.Stats
 import kotlinx.serialization.json.Json
-import org.json.JSONObject
 
-class HomeViewModel(private val context: Context): ViewModel() {
+// application, en vez de activity, para obtener contexto
+// sino se puede morir el activity, pero el viewmodel no, creando memory leak
+class HomeViewModel (application: Application) : AndroidViewModel(application) {
 
     //variable para guardar la lista de pokemons
     val pokemonList = mutableListOf<Pokemon>()
 
     private var currentPage = 0
-    private val pageSize = 20
+    private val pageSize = 10
 
     // Construye dinámicamente el nombre del archivo a partir de la página
     private fun getFileNameForPage(page: Int): String {
-        // El nombre del archivo sigue un patrón específico
         val start = page * pageSize + 1
         val end = (page + 1) * pageSize
-        // "pokemon_001_20.json" es el nombre del archivo para la página 0
+        // "pokemon_001_10.json" es el nombre del archivo para la página 0
         return "pokemon_${start.toString().padStart(3, '0')}_${end}.json"
+        // padStart rellena con 0 lo ingresado hasta llegar a 3 caracteres
     }
     // Leer archivo desde assets
+    // assets es un folder para guardar archivos que son usados por la app
     private fun loadJsonFromAssets(fileName: String): String {
-        val inputStream = context.assets.open(fileName)
+        val inputStream = getApplication<Application>().assets.open(fileName)
         return inputStream.bufferedReader().use { it.readText() }
+        // .use para cerrar operacion al terminarse de ejecutar
     }
-    // Función principal para cargar más Pokémon
+    // leer lista de pokemons del archivo json y agregar a lista
     fun loadMorePokemon() {
         try {
             val fileName = getFileNameForPage(currentPage)
@@ -38,76 +40,14 @@ class HomeViewModel(private val context: Context): ViewModel() {
 
             pokemonList.addAll(newPokemons)
 
-            currentPage++  // avanzar a la siguiente página
+            currentPage++  // avanzar página
         } catch (e: Exception) {
             e.printStackTrace()
             // Si no encuentra más archivos, no hace nada
         }
     }
 
-
-    fun getPokemonList(): List<Pokemon> {
-        return listOf(
-            Pokemon(
-                id = 1,
-                name = "Bulbasaur",
-                types = listOf("Grass", "Poison"),
-                weight = 6.9f,
-                height = 0.7f,
-                stats = Stats(
-                    hp = 45,
-                    attack = 49,
-                    defense = 49,
-                    specialAttack = 65,
-                    specialDefense = 65,
-                    speed = 45
-                )
-            ),
-            Pokemon(
-                id = 4,
-                name = "Charmander",
-                types = listOf("Fire"),
-                weight = 8.5f,
-                height = 0.6f,
-                stats = Stats(
-                    hp = 39,
-                    attack = 52,
-                    defense = 43,
-                    specialAttack = 60,
-                    specialDefense = 50,
-                    speed = 65
-                )
-            ),
-            Pokemon(
-                id = 7,
-                name = "Squirtle",
-                types = listOf("Water"),
-                weight = 9.0f,
-                height = 0.5f,
-                stats = Stats(
-                    hp = 44,
-                    attack = 48,
-                    defense = 65,
-                    specialAttack = 50,
-                    specialDefense = 64,
-                    speed = 43
-                )
-            ),
-            Pokemon(
-                id = 150,
-                name = "Mewtwo",
-                types = listOf("Psychic"),
-                weight = 122.0f,
-                height = 2.0f,
-                stats = Stats(
-                    hp = 106,
-                    attack = 110,
-                    defense = 90,
-                    specialAttack = 154,
-                    specialDefense = 90,
-                    speed = 130
-                )
-            )
-        )
+    fun getPokemons(): MutableList<Pokemon> {
+        return pokemonList
     }
 }

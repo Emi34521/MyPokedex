@@ -1,0 +1,361 @@
+{
+  "range": {
+    "start": 311,
+    "end": 320
+  },
+  "items": [
+    {
+      "id": 311,
+      "name": "plusle",
+      "type": [
+        "electric"
+      ],
+      "weight": 4.2,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 312,
+      "name": "minun",
+      "type": [
+        "electric"
+      ],
+      "weight": 4.2,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 40
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 313,
+      "name": "volbeat",
+      "type": [
+        "bug"
+      ],
+      "weight": 17.7,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 73
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "special-attack",
+          "value": 47
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 314,
+      "name": "illumise",
+      "type": [
+        "bug"
+      ],
+      "weight": 17.7,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 47
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "special-attack",
+          "value": 73
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 315,
+      "name": "roselia",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 2.0,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 45
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 316,
+      "name": "gulpin",
+      "type": [
+        "poison"
+      ],
+      "weight": 10.3,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 43
+        },
+        {
+          "name": "defense",
+          "value": 53
+        },
+        {
+          "name": "special-attack",
+          "value": 43
+        },
+        {
+          "name": "special-defense",
+          "value": 53
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 317,
+      "name": "swalot",
+      "type": [
+        "poison"
+      ],
+      "weight": 80.0,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 73
+        },
+        {
+          "name": "defense",
+          "value": 83
+        },
+        {
+          "name": "special-attack",
+          "value": 73
+        },
+        {
+          "name": "special-defense",
+          "value": 83
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": 318,
+      "name": "carvanha",
+      "type": [
+        "water",
+        "dark"
+      ],
+      "weight": 20.8,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 20
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 20
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 319,
+      "name": "sharpedo",
+      "type": [
+        "water",
+        "dark"
+      ],
+      "weight": 88.8,
+      "height": 1.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 120
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 320,
+      "name": "wailmer",
+      "type": [
+        "water"
+      ],
+      "weight": 130.0,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 130
+        },
+        {
+          "name": "attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 70
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    }
+  ]
+}
