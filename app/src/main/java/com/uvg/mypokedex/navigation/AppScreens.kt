@@ -1,4 +1,4 @@
-package com.uvg.mypokedex.ui.navigation
+package com.uvg.mypokedex.navigation
 
 sealed class AppScreens(val route: String){
     object home: AppScreens("home_screen")
