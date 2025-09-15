@@ -30,10 +30,10 @@ fun HomeScreen(
     val pokemonList = viewModel.getPokemons()
     if (pokemonList.isEmpty()) {
         Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("Loading Pokémon or no Pokémon found...")
+            Text("Loading Pokémons or no Pokémons found...")
 
         }
-        return // Exit early if the list is empty
+        return // Salir en caso de lista vacia
     }
     val state = rememberLazyGridState()
 
@@ -42,24 +42,19 @@ fun HomeScreen(
             // averigua index del ultimo elemento visible
             .collect { lastVisibleIndex ->
                 if (lastVisibleIndex != null && lastVisibleIndex == pokemonList.lastIndex) {
-                    // recoge el index y lo compara con el de la lista
+                    // recoge el index y lo compara con el ultimo de la lista
                     viewModel.loadMorePokemon()
                 }
             }
     }
     LazyVerticalGrid(
         state = state,
-        //siempre que se corre el codigo, recomposicione, se mostrara el ultimo estado
         modifier = modifier,
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-        //espaciado del objeto
         verticalArrangement = Arrangement.SpaceBetween,
-        //espaciado entre elementos
         columns = GridCells.Fixed(2)
-        //cantidad de columnas
     ) {
         items(pokemonList, key = { it.id }) { pokemon: Pokemon ->
-            //los elementos del grid son las cartas
             PokemonCard(pokemon)
         }
     }
