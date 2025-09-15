@@ -3,7 +3,6 @@ package com.uvg.mypokedex.ui.components
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
@@ -12,7 +11,6 @@ import androidx.compose.material3.DividerDefaults
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
-import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.ExposedDropdownMenuDefaults.TrailingIcon
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Text
@@ -27,7 +25,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.uvg.mypokedex.data.model.DropdownItem
 
-val iteList = listOf(
+val itemList = listOf(
     DropdownItem("Name"),
     DropdownItem("Número")
 )
@@ -50,7 +48,7 @@ fun SearchTools(){
             //generado por gemini
             HorizontalDivider(Modifier, DividerDefaults.Thickness, DividerDefaults.color)
             var expanded by remember { mutableStateOf(false) }
-            var selectedOption by remember { mutableStateOf(iteList[0]) }
+            var selectedOption by remember { mutableStateOf(itemList[0]) }
             val options = listOf("Número", "Nombre")
 
 
@@ -80,7 +78,7 @@ fun SearchTools(){
                             DropdownMenuItem(
                                 text = { Text(option) },
                                 onClick = {
-                                    selectedOption = option
+                                    selectedOption = DropdownItem(title = option)
                                     expanded = false
                                 }
                             )
@@ -90,12 +88,12 @@ fun SearchTools(){
                 }
 
             }
-            var order by remember { mutableStateOf(iteList[0]) }
+            var order by remember { mutableStateOf(itemList[0]) }
             Row (
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ){
-                iteList.forEach { item ->
+                itemList.forEach { item ->
                     DropdownMenuItem(
                         text = { Text(item.title) },
                         onClick = { order = item }
