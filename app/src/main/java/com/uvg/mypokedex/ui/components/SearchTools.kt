@@ -30,7 +30,7 @@ val itemList = listOf(
     DropdownItem("Número")
 )
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class)// optin para apis no estables
 @Composable
 fun SearchTools(){
     Card(
@@ -50,7 +50,6 @@ fun SearchTools(){
             var expanded by remember { mutableStateOf(false) }
             var selectedOption by remember { mutableStateOf(itemList[0]) }
             val options = listOf("Número", "Nombre")
-
 
             ExposedDropdownMenuBox(
                 modifier = Modifier
