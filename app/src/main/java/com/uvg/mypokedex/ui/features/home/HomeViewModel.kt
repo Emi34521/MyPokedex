@@ -15,6 +15,10 @@ class HomeViewModel (application: Application) : AndroidViewModel(application) {
     private var currentPage = 0
     private val pageSize = 10
 
+    init {
+        loadMorePokemon()
+    }
+
     // Construye dinámicamente el nombre del archivo a partir de la página
     private fun getFileNameForPage(page: Int): String {
         val start = page * pageSize + 1

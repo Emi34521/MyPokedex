@@ -1,5 +1,6 @@
 package com.uvg.mypokedex.ui.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -37,7 +38,7 @@ fun PokemonCard(
         ) {
             // imagen del pokemon
             AsyncImage(
-               model = imageUrl, // URL mencionada anteriormente
+                model = imageUrl, // URL mencionada anteriormente
                 contentDescription = "Imagen de ${pokemon.name}",
                 modifier = Modifier
                     .size(120.dp) // Tamaño de la imagen
@@ -65,6 +66,61 @@ fun PokemonCard(
                 text = "Tipo: ${pokemon.types.joinToString(", ")}",
                 style = MaterialTheme.typography.bodyMedium
 
+            )
+        }
+    }
+}
+
+@Composable
+fun PokemonCardClickable(
+    pokemon: Pokemon,
+    typeColor: Color = Color.Gray,
+    onClick: () -> Unit = {}
+) {
+    val imageUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png"
+
+    Card(
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+            .clickable { onClick() },
+        shape = MaterialTheme.shapes.medium,
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = typeColor
+        )
+    ) {
+        Column(
+            modifier = Modifier
+                .padding(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            AsyncImage(
+                model = imageUrl,
+                contentDescription = "Imagen de ${pokemon.name}",
+                modifier = Modifier
+                    .size(120.dp)
+                    .padding(8.dp)
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Row(modifier = Modifier.align(Alignment.CenterHorizontally)) {
+                Text(pokemon.id.toString(),
+                    style = MaterialTheme.typography.bodyLarge
+                )
+                Text(
+                    text = pokemon.name.replaceFirstChar { it.uppercase() },
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+
+            Text(
+                text = "Tipo: ${pokemon.types.joinToString(", ")}",
+                style = MaterialTheme.typography.bodyMedium
             )
         }
     }

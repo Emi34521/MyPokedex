@@ -19,13 +19,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.uvg.mypokedex.data.model.Pokemon
-import com.uvg.mypokedex.ui.components.PokemonCard
+import com.uvg.mypokedex.ui.components.PokemonCardClickable
 
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
     // Brindar contexto a ViewModel
-    viewModel: HomeViewModel = HomeViewModel(LocalContext.current.applicationContext as Application)
+    viewModel: HomeViewModel = HomeViewModel(LocalContext.current.applicationContext as Application),
+    onPokemonClick: (Int) -> Unit = {},
+    onSearchToolsClick: () -> Unit = {}
 ) {
     val pokemonList = viewModel.getPokemons()
     if (pokemonList.isEmpty()) {
@@ -60,7 +62,10 @@ fun HomeScreen(
     ) {
         items(pokemonList, key = { it.id }) { pokemon: Pokemon ->
             //los elementos del grid son las cartas
-            PokemonCard(pokemon)
+            PokemonCardClickable(
+                pokemon = pokemon,
+                onClick = { onPokemonClick(pokemon.id) }
+            )
         }
     }
 }
