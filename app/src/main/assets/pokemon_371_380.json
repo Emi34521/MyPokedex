@@ -1,0 +1,363 @@
+{
+  "range": {
+    "start": 371,
+    "end": 380
+  },
+  "items": [
+    {
+      "id": 371,
+      "name": "bagon",
+      "type": [
+        "dragon"
+      ],
+      "weight": 42.1,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 372,
+      "name": "shelgon",
+      "type": [
+        "dragon"
+      ],
+      "weight": 110.5,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 373,
+      "name": "salamence",
+      "type": [
+        "dragon",
+        "flying"
+      ],
+      "weight": 102.6,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 95
+        },
+        {
+          "name": "attack",
+          "value": 135
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 110
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 374,
+      "name": "beldum",
+      "type": [
+        "steel",
+        "psychic"
+      ],
+      "weight": 95.2,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 375,
+      "name": "metang",
+      "type": [
+        "steel",
+        "psychic"
+      ],
+      "weight": 202.5,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 376,
+      "name": "metagross",
+      "type": [
+        "steel",
+        "psychic"
+      ],
+      "weight": 550.0,
+      "height": 1.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 135
+        },
+        {
+          "name": "defense",
+          "value": 130
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 90
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 377,
+      "name": "regirock",
+      "type": [
+        "rock"
+      ],
+      "weight": 230.0,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 200
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 378,
+      "name": "regice",
+      "type": [
+        "ice"
+      ],
+      "weight": 175.0,
+      "height": 1.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 200
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 379,
+      "name": "registeel",
+      "type": [
+        "steel"
+      ],
+      "weight": 205.0,
+      "height": 1.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 150
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 150
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 380,
+      "name": "latias",
+      "type": [
+        "dragon",
+        "psychic"
+      ],
+      "weight": 40.0,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 90
+        },
+        {
+          "name": "special-attack",
+          "value": 110
+        },
+        {
+          "name": "special-defense",
+          "value": 130
+        },
+        {
+          "name": "speed",
+          "value": 110
+        }
+      ]
+    }
+  ]
+}

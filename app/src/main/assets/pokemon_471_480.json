@@ -1,0 +1,364 @@
+{
+  "range": {
+    "start": 471,
+    "end": 480
+  },
+  "items": [
+    {
+      "id": 471,
+      "name": "glaceon",
+      "type": [
+        "ice"
+      ],
+      "weight": 25.9,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 110
+        },
+        {
+          "name": "special-attack",
+          "value": 130
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 472,
+      "name": "gliscor",
+      "type": [
+        "ground",
+        "flying"
+      ],
+      "weight": 42.5,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 125
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 473,
+      "name": "mamoswine",
+      "type": [
+        "ice",
+        "ground"
+      ],
+      "weight": 291.0,
+      "height": 2.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 110
+        },
+        {
+          "name": "attack",
+          "value": 130
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 70
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 474,
+      "name": "porygon-z",
+      "type": [
+        "normal"
+      ],
+      "weight": 34.0,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 85
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 135
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 475,
+      "name": "gallade",
+      "type": [
+        "psychic",
+        "fighting"
+      ],
+      "weight": 52.0,
+      "height": 1.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 68
+        },
+        {
+          "name": "attack",
+          "value": 125
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 115
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 476,
+      "name": "probopass",
+      "type": [
+        "rock",
+        "steel"
+      ],
+      "weight": 340.0,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 145
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 150
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 477,
+      "name": "dusknoir",
+      "type": [
+        "ghost"
+      ],
+      "weight": 106.6,
+      "height": 2.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 135
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 135
+        },
+        {
+          "name": "speed",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "id": 478,
+      "name": "froslass",
+      "type": [
+        "ice",
+        "ghost"
+      ],
+      "weight": 26.6,
+      "height": 1.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 110
+        }
+      ]
+    },
+    {
+      "id": 479,
+      "name": "rotom",
+      "type": [
+        "electric",
+        "ghost"
+      ],
+      "weight": 0.3,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 77
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 77
+        },
+        {
+          "name": "speed",
+          "value": 91
+        }
+      ]
+    },
+    {
+      "id": 480,
+      "name": "uxie",
+      "type": [
+        "psychic"
+      ],
+      "weight": 0.3,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 130
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 130
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    }
+  ]
+}

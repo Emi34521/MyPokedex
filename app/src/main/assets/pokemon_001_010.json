@@ -1,0 +1,362 @@
+{
+  "range": {
+    "start": 1,
+    "end": 10
+  },
+  "items": [
+    {
+      "id": 1,
+      "name": "bulbasaur",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 6.9,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 49
+        },
+        {
+          "name": "defense",
+          "value": 49
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ivysaur",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 13.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 62
+        },
+        {
+          "name": "defense",
+          "value": 63
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 100.0,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 82
+        },
+        {
+          "name": "defense",
+          "value": 83
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "charmander",
+      "type": [
+        "fire"
+      ],
+      "weight": 8.5,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 39
+        },
+        {
+          "name": "attack",
+          "value": 52
+        },
+        {
+          "name": "defense",
+          "value": 43
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "type": [
+        "fire"
+      ],
+      "weight": 19.0,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 58
+        },
+        {
+          "name": "attack",
+          "value": 64
+        },
+        {
+          "name": "defense",
+          "value": 58
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "type": [
+        "fire",
+        "flying"
+      ],
+      "weight": 90.5,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 78
+        },
+        {
+          "name": "attack",
+          "value": 84
+        },
+        {
+          "name": "defense",
+          "value": 78
+        },
+        {
+          "name": "special-attack",
+          "value": 109
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "squirtle",
+      "type": [
+        "water"
+      ],
+      "weight": 9.0,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 44
+        },
+        {
+          "name": "attack",
+          "value": 48
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 64
+        },
+        {
+          "name": "speed",
+          "value": 43
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "wartortle",
+      "type": [
+        "water"
+      ],
+      "weight": 22.5,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 59
+        },
+        {
+          "name": "attack",
+          "value": 63
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "blastoise",
+      "type": [
+        "water"
+      ],
+      "weight": 85.5,
+      "height": 1.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 79
+        },
+        {
+          "name": "attack",
+          "value": 83
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "special-defense",
+          "value": 105
+        },
+        {
+          "name": "speed",
+          "value": 78
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "caterpie",
+      "type": [
+        "bug"
+      ],
+      "weight": 2.9,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 30
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 20
+        },
+        {
+          "name": "special-defense",
+          "value": 20
+        },
+        {
+          "name": "speed",
+          "value": 45
+        }
+      ]
+    }
+  ]
+}

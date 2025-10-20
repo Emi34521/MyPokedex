@@ -1,0 +1,364 @@
+{
+  "range": {
+    "start": 441,
+    "end": 450
+  },
+  "items": [
+    {
+      "id": 441,
+      "name": "chatot",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 1.9,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 76
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 45
+        },
+        {
+          "name": "special-attack",
+          "value": 92
+        },
+        {
+          "name": "special-defense",
+          "value": 42
+        },
+        {
+          "name": "speed",
+          "value": 91
+        }
+      ]
+    },
+    {
+      "id": 442,
+      "name": "spiritomb",
+      "type": [
+        "ghost",
+        "dark"
+      ],
+      "weight": 108.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 92
+        },
+        {
+          "name": "defense",
+          "value": 108
+        },
+        {
+          "name": "special-attack",
+          "value": 92
+        },
+        {
+          "name": "special-defense",
+          "value": 108
+        },
+        {
+          "name": "speed",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": 443,
+      "name": "gible",
+      "type": [
+        "dragon",
+        "ground"
+      ],
+      "weight": 20.5,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 58
+        },
+        {
+          "name": "attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 45
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 45
+        },
+        {
+          "name": "speed",
+          "value": 42
+        }
+      ]
+    },
+    {
+      "id": 444,
+      "name": "gabite",
+      "type": [
+        "dragon",
+        "ground"
+      ],
+      "weight": 56.0,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 68
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 82
+        }
+      ]
+    },
+    {
+      "id": 445,
+      "name": "garchomp",
+      "type": [
+        "dragon",
+        "ground"
+      ],
+      "weight": 95.0,
+      "height": 1.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 108
+        },
+        {
+          "name": "attack",
+          "value": 130
+        },
+        {
+          "name": "defense",
+          "value": 95
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 102
+        }
+      ]
+    },
+    {
+      "id": 446,
+      "name": "munchlax",
+      "type": [
+        "normal"
+      ],
+      "weight": 105.0,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 135
+        },
+        {
+          "name": "attack",
+          "value": 85
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 447,
+      "name": "riolu",
+      "type": [
+        "fighting"
+      ],
+      "weight": 20.2,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": 448,
+      "name": "lucario",
+      "type": [
+        "fighting",
+        "steel"
+      ],
+      "weight": 54.0,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 110
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 115
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 449,
+      "name": "hippopotas",
+      "type": [
+        "ground"
+      ],
+      "weight": 49.5,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 68
+        },
+        {
+          "name": "attack",
+          "value": 72
+        },
+        {
+          "name": "defense",
+          "value": 78
+        },
+        {
+          "name": "special-attack",
+          "value": 38
+        },
+        {
+          "name": "special-defense",
+          "value": 42
+        },
+        {
+          "name": "speed",
+          "value": 32
+        }
+      ]
+    },
+    {
+      "id": 450,
+      "name": "hippowdon",
+      "type": [
+        "ground"
+      ],
+      "weight": 300.0,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 108
+        },
+        {
+          "name": "attack",
+          "value": 112
+        },
+        {
+          "name": "defense",
+          "value": 118
+        },
+        {
+          "name": "special-attack",
+          "value": 68
+        },
+        {
+          "name": "special-defense",
+          "value": 72
+        },
+        {
+          "name": "speed",
+          "value": 47
+        }
+      ]
+    }
+  ]
+}

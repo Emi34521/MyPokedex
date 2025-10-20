@@ -1,0 +1,365 @@
+{
+  "range": {
+    "start": 11,
+    "end": 20
+  },
+  "items": [
+    {
+      "id": 11,
+      "name": "metapod",
+      "type": [
+        "bug"
+      ],
+      "weight": 9.9,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 20
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 25
+        },
+        {
+          "name": "special-defense",
+          "value": 25
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "butterfree",
+      "type": [
+        "bug",
+        "flying"
+      ],
+      "weight": 32.0,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "weedle",
+      "type": [
+        "bug",
+        "poison"
+      ],
+      "weight": 3.2,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 35
+        },
+        {
+          "name": "defense",
+          "value": 30
+        },
+        {
+          "name": "special-attack",
+          "value": 20
+        },
+        {
+          "name": "special-defense",
+          "value": 20
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "kakuna",
+      "type": [
+        "bug",
+        "poison"
+      ],
+      "weight": 10.0,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 25
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 25
+        },
+        {
+          "name": "special-defense",
+          "value": 25
+        },
+        {
+          "name": "speed",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "beedrill",
+      "type": [
+        "bug",
+        "poison"
+      ],
+      "weight": 29.5,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "pidgey",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 1.8,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "speed",
+          "value": 56
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "pidgeotto",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 30.0,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 63
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 71
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "pidgeot",
+      "type": [
+        "normal",
+        "flying"
+      ],
+      "weight": 39.5,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 83
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "special-attack",
+          "value": 70
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 101
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "rattata",
+      "type": [
+        "normal"
+      ],
+      "weight": 3.5,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 30
+        },
+        {
+          "name": "attack",
+          "value": 56
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 25
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "speed",
+          "value": 72
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "raticate",
+      "type": [
+        "normal"
+      ],
+      "weight": 18.5,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 81
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 97
+        }
+      ]
+    }
+  ]
+}
