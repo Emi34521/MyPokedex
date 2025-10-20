@@ -34,6 +34,7 @@ val itemList = listOf(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
+// TODO(implementar herramientas de busqueda)
 fun SearchTools(){
     Card(
         modifier = Modifier
