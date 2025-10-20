@@ -10,8 +10,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import androidx.navigation.compose.rememberNavController
-import com.uvg.mypokedex.navigate.AppNavigation
 import com.uvg.mypokedex.ui.components.PokemonSearchBar
 import com.uvg.mypokedex.ui.theme.MyPokedexTheme
 
@@ -32,16 +30,13 @@ class MainActivity : ComponentActivity() {
                         .padding(innerPadding)
                         .fillMaxSize()
                     ){
-                        val navController = rememberNavController()
-                        AppNavigation(navController = navController,
-                            modifier = Modifier.padding(innerPadding)
+                        HomeScreen(modifier = Modifier.padding(innerPadding))
+                        PokemonSearchBar(
+                            modifier = Modifier.padding (innerPadding),
+                            allPokemons = homeViewModel.getPokemons()
                         )
-//                        HomeScreen(modifier = Modifier.padding(innerPadding))
-//                        PokemonSearchBar(
-//                            modifier = Modifier.padding (innerPadding),
-//                            allPokemons = homeViewModel.getPokemons()
-//                        )
-                    }
+                }
+
                 }
             }
         }

@@ -35,7 +35,7 @@ import com.uvg.mypokedex.data.model.toMap
 
 
 @Composable
-fun DetailScreen(
+fun PokemonDetailScreen(
     pokemon: Pokemon,
     onBack: () -> Unit = {},
     viewModel: PokemonDetailViewModel = PokemonDetailViewModel(),
