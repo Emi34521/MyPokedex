@@ -47,8 +47,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.navigation:navigation-compose:2.7.5")
-    implementation("androidx.navigation:navigation-runtime-ktx:2.7.5")
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
