@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Card
 import androidx.compose.material3.DividerDefaults
 import androidx.compose.material3.DropdownMenuItem
@@ -13,6 +14,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults.TrailingIcon
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -26,8 +28,8 @@ import androidx.compose.ui.unit.dp
 import com.uvg.mypokedex.data.model.DropdownItem
 
 val itemList = listOf(
-    DropdownItem("Name"),
-    DropdownItem("Número")
+    DropdownItem("Número"),
+    DropdownItem("Nombre")
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -88,16 +90,37 @@ fun SearchTools(){
                 }
 
             }
+
             var order by remember { mutableStateOf(itemList[0]) }
-            Row (
+
+            Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly
-            ){
+                horizontalArrangement = Arrangement.SpaceAround, // distribuye de manera pareja
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text("Ordenar por:") // texto para claridad
+
+                // radio boton para cada item
                 itemList.forEach { item ->
-                    DropdownMenuItem(
-                        text = { Text(item.title) },
-                        onClick = { order = item }
-                    )
+                    Row(
+                        // fila completa clicable, no solo el boton
+                        modifier = Modifier
+                            .selectable(
+                                selected = (item == order), // Use 'order' to check if this item is selected
+                                onClick = { order = item }  // Update 'order' when clicked
+                            )
+                            .padding(horizontal = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        RadioButton(
+                            selected = (item == order), // se lee order
+                            onClick = { order = item }  // se escribe order
+                        )
+                        Text(
+                            text = item.title,
+                            modifier = Modifier.padding(start = 4.dp)
+                        )
+                    }
                 }
             }
         }
