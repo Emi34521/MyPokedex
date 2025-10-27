@@ -6,10 +6,12 @@ import com.uvg.mypokedex.data.remote.model.PokemonListResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
+// Clase de repositorio para interactuar con la API
 class PokemonRepository {
     private val apiService = RetrofitClient.pokeApiService
 
     suspend fun getPokemonList(limit: Int = 20, offset: Int = 0): Flow<Result<PokemonListResponse>> = flow {
+        // flow: asynchronous data stream that sequentially emits values and completes normally or with an exception.
         try {
             emit(Result.loading())
             val response = apiService.getPokemonList(limit, offset)

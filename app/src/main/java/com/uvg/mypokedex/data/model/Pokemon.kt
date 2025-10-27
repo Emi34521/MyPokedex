@@ -22,7 +22,7 @@ data class Stats(
     val speed: Int
 )
 
-// 🔹 Función que recorre stats
+// 🔹 Mapear nombre stat con su valor
 fun Stats.toMap(): Map<String, Int> = mapOf(
     "HP" to hp,
     "Attack" to attack,

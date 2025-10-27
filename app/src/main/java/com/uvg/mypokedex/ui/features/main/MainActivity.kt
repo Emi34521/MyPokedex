@@ -1,4 +1,4 @@
-package com.uvg.mypokedex.ui.features.home
+package com.uvg.mypokedex.ui.features.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,8 +11,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.uvg.mypokedex.navigation.AppNavigation
+import com.uvg.mypokedex.ui.features.home.HomeViewModel
 import com.uvg.mypokedex.ui.theme.MyPokedexTheme
-
 
 class MainActivity : ComponentActivity() {
     private val homeViewModel: HomeViewModel by viewModels()
@@ -27,11 +27,11 @@ class MainActivity : ComponentActivity() {
             MyPokedexTheme {
                 val navController = rememberNavController()
 
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(modifier = Modifier.Companion.fillMaxSize()) { innerPadding ->
                     AppNavigation(
                         navController = navController,
                         homeViewModel = homeViewModel,
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier.Companion.padding(innerPadding)
                     )
                 }
             }

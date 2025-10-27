@@ -6,11 +6,13 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
+// Creacion de URL
 interface PokeApiService {
 
     // obtener lista de Pokémon
     @GET("pokemon")
     suspend fun getPokemonList(
+        // parameter appended a la URL
         @Query("limit") limit: Int = 20,
         @Query("offset") offset: Int = 0
     ): PokemonListResponse
@@ -18,6 +20,7 @@ interface PokeApiService {
     // obtener detalles de un pokemon
     @GET("pokemon/{id}")
     suspend fun getPokemonDetail(
+        // path segment appended a la URL
         @Path("id") id: Int
     ): PokemonDetailResponse
 }

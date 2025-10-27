@@ -2,6 +2,7 @@ package com.uvg.mypokedex.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 
+// Modelo de datos para la respuesta de la API de Pokémon
 data class PokemonDetailResponse(
     val id: Int,
     val name: String,
@@ -22,15 +23,17 @@ data class TypeInfo(
 )
 
 data class PokemonSprites(
-    val front_default: String?,
+    // ? indica que puede ser nulo
+    val frontDefault: String?,
     val other: OtherSprites?
 )
 
 data class OtherSprites(
+    // serialized to JSON with the provided name value.
     @SerializedName("official-artwork")
     val officialArtwork: OfficialArtwork?
 )
 
 data class OfficialArtwork(
-    val front_default: String?
+    val frontDefault: String?
 )

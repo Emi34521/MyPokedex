@@ -17,20 +17,22 @@ import com.uvg.mypokedex.ui.features.home.HomeViewModel
 @Composable
 fun AppNavigation(
     navController: NavHostController,
+    //TODO(cambiar por NewHomeViewModel)
     homeViewModel: HomeViewModel,
     modifier: Modifier = Modifier
 ) {
     NavHost(
         navController = navController,
-        startDestination = AppScreens.home.route,
+        startDestination = AppScreens.Home.route,
         modifier = modifier
     ) {
         // Pantalla principal (Home)
-        composable(route = AppScreens.home.route) {
+        composable(route = AppScreens.Home.route) {
             HomeScreen(
+                //TODO(cambiar por NewHomeViewModel)
                 viewModel = homeViewModel,
                 onPokemonClick = { pokemonId ->
-                    navController.navigate(AppScreens.detail.createRoute(pokemonId))
+                    navController.navigate(AppScreens.Detail.createRoute(pokemonId))
                 },
                 onSearchToolsClick = {
                     navController.navigate(AppScreens.SearchToolsDialog.route)
@@ -40,7 +42,7 @@ fun AppNavigation(
 
         // Pantalla de detalle
         composable(
-            route = AppScreens.detail.route,
+            route = AppScreens.Detail.route,
             arguments = listOf(
                 navArgument("pokemonId") {
                     type = NavType.IntType
