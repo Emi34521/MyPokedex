@@ -15,7 +15,6 @@ import com.uvg.mypokedex.ui.detail.PokemonDetailScreen
 import com.uvg.mypokedex.ui.features.home.HomeScreen
 import com.uvg.mypokedex.ui.features.home.HomeViewModel
 
-
 @Composable
 fun AppNavigation(
     navController: NavHostController,
@@ -50,22 +49,22 @@ fun AppNavigation(
             )
         ) { backStackEntry ->
             val pokemonId = backStackEntry.arguments?.getInt("pokemonId") ?: 0
-            val pokemon = homeViewModel.getPokemons().find { it.id == pokemonId }
+            val pokemonList by homeViewModel.pokemonList.collectAsState()
+            val pokemon = pokemonList.find { it.id == pokemonId }
 
             if (pokemon != null) {
                 PokemonDetailScreen(
                     pokemon = pokemon,
                     onBack = { navController.popBackStack() },
                     onToggleFavorite = { isFavorite ->
-                        // Logica para agregar/quitar de favoritos
+                        // Lógica para agregar/quitar de favoritos
                     }
                 )
             }
         }
 
-        // Dialogo de herramientas de búsqueda
+        // Diálogo de herramientas de búsqueda
         dialog(route = AppScreens.SearchToolsDialog.route) {
-
             val currentSortOrder by homeViewModel.currentSortOrder.collectAsState()
 
             SearchToolsDialog(

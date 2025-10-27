@@ -1,99 +1,222 @@
 package com.uvg.mypokedex.ui.features.home
 
 import android.app.Application
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.grid.rememberLazyGridState
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
-import androidx.compose.runtime.snapshotFlow
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.uvg.mypokedex.data.model.Pokemon
+import com.uvg.mypokedex.ui.components.NetworkStatusBanner
 import com.uvg.mypokedex.ui.components.PokemonCardClickable
 import com.uvg.mypokedex.ui.components.PokemonSearchBar
-import androidx.compose.runtime.getValue
+import kotlinx.coroutines.delay
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
-    // Brindar contexto a ViewModel
-    viewModel: HomeViewModel = HomeViewModel(LocalContext.current.applicationContext as Application),
+    viewModel: HomeViewModel = HomeViewModel(
+        LocalContext.current.applicationContext as Application
+    ),
     onPokemonClick: (Int) -> Unit = {},
     onSearchToolsClick: () -> Unit = {}
 ) {
+    // Estados del ViewModel
+    val pokemonList by viewModel.pokemonList.collectAsState()
+    val isConnected by viewModel.isConnected.collectAsState()
+    val isLoading by viewModel.isLoading.collectAsState()
+    val errorMessage by viewModel.errorMessage.collectAsState()
     val currentSortOrder by viewModel.currentSortOrder.collectAsState()
-    val pokemonListKey = remember(currentSortOrder) { currentSortOrder }
-    val pokemonList = viewModel.getPokemons()
-    if (pokemonList.isEmpty()) {
-        Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("Loading Pokémon or no Pokémon found...")
+
+    // Estado local para búsqueda
+    var searchQuery by remember { mutableStateOf("") }
+
+    // Estado para mostrar banner de reconexión
+    var showReconnectedBanner by remember { mutableStateOf(false) }
+    var previousConnectionState by remember { mutableStateOf(isConnected) }
+
+    // Detectar cambios en conexión
+    LaunchedEffect(isConnected) {
+        if (isConnected && !previousConnectionState) {
+            // Se restauró la conexión
+            showReconnectedBanner = true
+            viewModel.forceRefresh()
+
+            // Ocultar banner después de 3 segundos
+            delay(3000)
+            showReconnectedBanner = false
         }
-        return // Exit
+        previousConnectionState = isConnected
     }
 
-    var searchQuery by rememberSaveable { mutableStateOf("") }
-    val filteredPokemons = if (searchQuery.isBlank()) {
-        pokemonList // vacio => todos
-    } else {
-        pokemonList.filter { it.name.contains(searchQuery, ignoreCase = true) }
+    // Actualizar búsqueda en el ViewModel
+    LaunchedEffect(searchQuery) {
+        viewModel.updateSearchQuery(searchQuery)
     }
 
-    val state = rememberLazyGridState()
+    Scaffold(
+        topBar = {
+            Column {
+                TopAppBar(
+                    title = { Text("Pokédex") },
+                    actions = {
+                        IconButton(
+                            onClick = { viewModel.forceRefresh() },
+                            enabled = isConnected && !isLoading
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.Refresh,
+                                contentDescription = "Actualizar",
+                                tint = if (isConnected && !isLoading) {
+                                    MaterialTheme.colorScheme.onSurface
+                                } else {
+                                    MaterialTheme.colorScheme.onSurface.copy(alpha = 0.3f)
+                                }
+                            )
+                        }
+                    }
+                )
 
-    LaunchedEffect(state) { // a cada scroll crea snapshot
-        snapshotFlow { state.layoutInfo.visibleItemsInfo.lastOrNull()?.index }
-            // averigua index del ultimo elemento visible
-            .collect { lastVisibleIndex ->
-                if (lastVisibleIndex != null && lastVisibleIndex == filteredPokemons.lastIndex) {
-                    // recoge el index y lo compara con el de la lista
-                    viewModel.loadMorePokemon()
+                // Banner de estado de conexión
+                NetworkStatusBanner(
+                    isConnected = isConnected,
+                    isLoading = isLoading,
+                    onRetry = { viewModel.forceRefresh() }
+                )
+
+                // Banner de reconexión exitosa
+                if (showReconnectedBanner) {
+                    Surface(
+                        color = MaterialTheme.colorScheme.primaryContainer,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text(
+                            text = "✓ Conexión restaurada. Actualizando datos...",
+                            modifier = Modifier.padding(16.dp),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onPrimaryContainer
+                        )
+                    }
                 }
             }
-    }
-
-    PokemonSearchBar(
-        searchQuery = searchQuery,
-        onQueryChanged = { newQuery -> searchQuery = newQuery } // lambda actualiza query
-    )
-
-    Spacer(modifier = Modifier.height(10.dp))
-
-    LazyVerticalGrid(
-        state = state,
-        //siempre que se corre el codigo, recomposicione, se mostrara el ultimo estado
-        modifier = modifier,
-        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-        //espaciado del objeto
-        verticalArrangement = Arrangement.SpaceBetween,
-        //espaciado entre elementos
-        columns = GridCells.Fixed(2),
-        //cantidad de columnas
-
-
-    ) {
-        items(filteredPokemons, key = { it.id }) { pokemon: Pokemon ->
-            //los elementos del grid son las cartas
-            PokemonCardClickable(
-                pokemon = pokemon,
-                onClick = { onPokemonClick(pokemon.id) }
+        },
+        modifier = modifier
+    ) { paddingValues ->
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+        ) {
+            // Barra de búsqueda
+            PokemonSearchBar(
+                searchQuery = searchQuery,
+                onQueryChanged = { searchQuery = it },
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
             )
+
+            // Mensaje de error
+            errorMessage?.let { error ->
+                Card(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.errorContainer
+                    )
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(16.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = error,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onErrorContainer,
+                            modifier = Modifier.weight(1f)
+                        )
+                        TextButton(onClick = { viewModel.clearError() }) {
+                            Text("OK")
+                        }
+                    }
+                }
+            }
+
+            // Indicador de carga
+            if (isLoading && pokemonList.isEmpty()) {
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        CircularProgressIndicator()
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Text(
+                            text = "Cargando Pokémon...",
+                            style = MaterialTheme.typography.bodyMedium
+                        )
+                    }
+                }
+            } else if (pokemonList.isEmpty()) {
+                // Sin resultados
+                Box(
+                    modifier = Modifier.fillMaxSize(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = if (searchQuery.isNotEmpty()) {
+                            "No se encontraron Pokémon"
+                        } else {
+                            "No hay Pokémon guardados.\n${if (!isConnected) "Conecta a internet para cargar datos." else ""}"
+                        },
+                        style = MaterialTheme.typography.bodyLarge
+                    )
+                }
+            } else {
+                // Lista de Pokémon
+                val gridState = rememberLazyGridState()
+
+                LazyVerticalGrid(
+                    state = gridState,
+                    columns = GridCells.Fixed(2),
+                    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    items(
+                        items = pokemonList,
+                        key = { it.id }
+                    ) { pokemon ->
+                        PokemonCardClickable(
+                            pokemon = pokemon,
+                            onClick = { onPokemonClick(pokemon.id) }
+                        )
+                    }
+
+                    // Botón para cargar más (solo si hay conexión o datos JSON)
+                    item {
+                        if (!isLoading) {
+                            Button(
+                                onClick = { viewModel.loadMorePokemonFromJson() },
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Text("Cargar más")
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

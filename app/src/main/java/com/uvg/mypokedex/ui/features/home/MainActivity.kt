@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
 import com.uvg.mypokedex.navigation.AppNavigation
 import com.uvg.mypokedex.ui.theme.MyPokedexTheme
@@ -31,10 +32,10 @@ class MainActivity : ComponentActivity() {
                     AppNavigation(
                         navController = navController,
                         homeViewModel = homeViewModel,
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier.padding(innerPadding),
                     )
                 }
-            }
+            }//
         }
     }
 }
