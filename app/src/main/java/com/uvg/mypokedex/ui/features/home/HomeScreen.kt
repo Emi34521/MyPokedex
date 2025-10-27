@@ -14,8 +14,10 @@ import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
@@ -26,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import com.uvg.mypokedex.data.model.Pokemon
 import com.uvg.mypokedex.ui.components.PokemonCardClickable
 import com.uvg.mypokedex.ui.components.PokemonSearchBar
+import androidx.compose.runtime.getValue
 
 @Composable
 fun HomeScreen(
@@ -35,6 +38,8 @@ fun HomeScreen(
     onPokemonClick: (Int) -> Unit = {},
     onSearchToolsClick: () -> Unit = {}
 ) {
+    val currentSortOrder by viewModel.currentSortOrder.collectAsState()
+    val pokemonListKey = remember(currentSortOrder) { currentSortOrder }
     val pokemonList = viewModel.getPokemons()
     if (pokemonList.isEmpty()) {
         Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
@@ -78,8 +83,10 @@ fun HomeScreen(
         //espaciado del objeto
         verticalArrangement = Arrangement.SpaceBetween,
         //espaciado entre elementos
-        columns = GridCells.Fixed(2)
+        columns = GridCells.Fixed(2),
         //cantidad de columnas
+
+
     ) {
         items(filteredPokemons, key = { it.id }) { pokemon: Pokemon ->
             //los elementos del grid son las cartas

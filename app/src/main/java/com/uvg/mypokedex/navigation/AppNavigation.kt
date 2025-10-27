@@ -1,6 +1,8 @@
 package com.uvg.mypokedex.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
@@ -63,8 +65,13 @@ fun AppNavigation(
 
         // Dialogo de herramientas de búsqueda
         dialog(route = AppScreens.SearchToolsDialog.route) {
+
+            val currentSortOrder by homeViewModel.currentSortOrder.collectAsState()
+
             SearchToolsDialog(
-                onDismiss = { navController.popBackStack() }
+                onDismiss = { navController.popBackStack() },
+                viewModel = homeViewModel,
+                currentSortOrder = currentSortOrder
             )
         }
     }

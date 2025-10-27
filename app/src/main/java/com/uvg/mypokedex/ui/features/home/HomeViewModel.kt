@@ -2,12 +2,21 @@ package com.uvg.mypokedex.ui.features.home
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.viewModelScope
 import com.uvg.mypokedex.data.model.Pokemon
 import kotlinx.serialization.json.Json
+import com.uvg.mypokedex.data.local.DataStoreManager
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
 
 // application, en vez de activity, para obtener contexto
 // sino se puede morir el activity, pero el viewmodel no, creando memory leak
 class HomeViewModel (application: Application) : AndroidViewModel(application) {
+    private val dataStoreManager = DataStoreManager(application)
+    private val _currentSortOrder = MutableStateFlow("BY_NUMBER_ASC")
+    val currentSortOrder: StateFlow<String> = _currentSortOrder.asStateFlow()
 
     //variable para guardar la lista de pokemons
     val pokemonList = mutableListOf<Pokemon>()
@@ -16,8 +25,33 @@ class HomeViewModel (application: Application) : AndroidViewModel(application) {
     private val pageSize = 10
 
     init {
+        loadSavedSortOrder()
         loadMorePokemon()
     }
+    private fun loadSavedSortOrder() {
+        viewModelScope.launch {
+            dataStoreManager.sortOrderFlow.collect { savedOrder ->
+                _currentSortOrder.value = savedOrder
+                applySortingToCurrentList()
+            }
+        }
+    }
+
+    private fun applySortingToCurrentList() {
+        when (_currentSortOrder.value) {
+            "BY_NUMBER_ASC" -> pokemonList.sortBy { it.id }
+            "BY_NUMBER_DESC" -> pokemonList.sortByDescending { it.id }
+            "BY_NAME_ASC" -> pokemonList.sortBy { it.name }
+            "BY_NAME_DESC" -> pokemonList.sortByDescending { it.name }
+        }
+    }
+
+    fun changeSortOrder(newOrder: String) {
+        viewModelScope.launch {
+            dataStoreManager.saveSortOrder(newOrder)
+        }
+    }
+
 
     // Construye dinámicamente el nombre del archivo a partir de la página
     private fun getFileNameForPage(page: Int): String {

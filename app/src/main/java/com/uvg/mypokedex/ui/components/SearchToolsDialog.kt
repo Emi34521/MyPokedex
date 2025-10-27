@@ -7,15 +7,27 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.uvg.mypokedex.ui.features.home.HomeViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SearchToolsDialog(
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    viewModel: HomeViewModel,
+    currentSortOrder: String
 ) {
     var expanded by remember { mutableStateOf(false) }
-    var selectedOption by remember { mutableStateOf("Número") }
-    var isAscending by remember { mutableStateOf(true) }
+    val (currentSortType, currentSortDirection) = remember(currentSortOrder) {
+        when (currentSortOrder) {
+            "BY_NUMBER_ASC" -> Pair("Número", true)
+            "BY_NUMBER_DESC" -> Pair("Número", false)
+            "BY_NAME_ASC" -> Pair("Nombre", true)
+            "BY_NAME_DESC" -> Pair("Nombre", false)
+            else -> Pair("Número", true)
+        }
+    }
+    var selectedOption by remember { mutableStateOf(currentSortType) }
+    var isAscending by remember { mutableStateOf(currentSortDirection) }
 
     val options = listOf("Número", "Nombre")
 
@@ -115,9 +127,31 @@ fun SearchToolsDialog(
             }
         },
         confirmButton = {
-            TextButton(onClick = onDismiss) {
-                Text("Cerrar")
+            Row {
+                // ← CAMBIAR COMPLETAMENTE el TextButton de "Aplicar"
+                TextButton(
+                    onClick = {
+                        val newSortOrder = when {
+                            selectedOption == "Número" && isAscending -> "BY_NUMBER_ASC"
+                            selectedOption == "Número" && !isAscending -> "BY_NUMBER_DESC"
+                            selectedOption == "Nombre" && isAscending -> "BY_NAME_ASC"
+                            selectedOption == "Nombre" && !isAscending -> "BY_NAME_DESC"
+                            else -> "BY_NUMBER_ASC"
+                        }
+                        viewModel.changeSortOrder(newSortOrder) // ← AÑADIR esta línea
+                        onDismiss()
+                    }
+                ) {
+                    Text("Aplicar")
+                }
+                Spacer(modifier = Modifier.width(8.dp))
+                TextButton(onClick = onDismiss) {
+                    Text("Cerrar")
+                }
             }
         }
     )
 }
+
+
+
