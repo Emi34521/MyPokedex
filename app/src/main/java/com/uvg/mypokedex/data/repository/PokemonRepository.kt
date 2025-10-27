@@ -1,46 +1,35 @@
 package com.uvg.mypokedex.data.repository
 
-import com.uvg.mypokedex.data.remote.RetrofitClient
-import com.uvg.mypokedex.data.remote.model.PokemonDetailResponse
-import com.uvg.mypokedex.data.remote.model.PokemonListResponse
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import com.uvg.mypokedex.data.model.PokemonBasic
+import com.uvg.mypokedex.data.model.PokemonDetail
+import com.uvg.mypokedex.data.network.RetrofitInstance
 
-// Clase de repositorio para interactuar con la API
 class PokemonRepository {
-    private val apiService = RetrofitClient.pokeApiService
+    private val api = RetrofitInstance.api
 
-    suspend fun getPokemonList(limit: Int = 20, offset: Int = 0): Flow<Result<PokemonListResponse>> = flow {
-        // flow: asynchronous data stream that sequentially emits values and completes normally or with an exception.
-        try {
-            emit(Result.loading())
-            val response = apiService.getPokemonList(limit, offset)
-            emit(Result.success(response))
+    suspend fun getPokemonList(offset: Int, limit: Int): Result<List<PokemonBasic>> {
+        return try {
+            val response = api.getPokemonList(offset, limit)
+            if (response.isSuccessful && response.body() != null) {
+                Result.success(response.body()!!.results)
+            } else {
+                Result.failure(Exception("Error al cargar la lista de Pokémon"))
+            }
         } catch (e: Exception) {
-            emit(Result.error("Error fetching Pokémon list: ${e.message}"))
+            Result.failure(e)
         }
     }
 
-    suspend fun getPokemonDetail(id: Int): Flow<Result<PokemonDetailResponse>> = flow {
-        try {
-            emit(Result.loading())
-            val response = apiService.getPokemonDetail(id)
-            emit(Result.success(response))
+    suspend fun getPokemonDetail(id: Int): Result<PokemonDetail> {
+        return try {
+            val response = api.getPokemonDetail(id)
+            if (response.isSuccessful && response.body() != null) {
+                Result.success(response.body()!!)
+            } else {
+                Result.failure(Exception("Error al cargar el detalle del Pokémon"))
+            }
         } catch (e: Exception) {
-            emit(Result.error("Error fetching Pokémon detail: ${e.message}"))
+            Result.failure(e)
         }
-    }
-}
-
-// Clase auxiliar para manejar estados
-sealed class Result<out T> {
-    data class Success<out T>(val data: T) : Result<T>()
-    data class Error(val message: String) : Result<Nothing>()
-    object Loading : Result<Nothing>()
-
-    companion object {
-        fun <T> success(data: T): Result<T> = Success(data)
-        fun error(message: String): Result<Nothing> = Error(message)
-        fun loading(): Result<Nothing> = Loading
     }
 }
