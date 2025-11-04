@@ -14,7 +14,6 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -41,60 +40,6 @@ class PokemonRepository(
 
     // Flow de orden de clasificación
     val sortOrder: Flow<SortOrder> = preferencesRepository.sortOrderFlow
-
-    // Flow combinado de Pokémon ordenados según preferencia
-    val pokemonList: Flow<List<CachedPokemon>> = combine(
-        sortOrder,
-        pokemonDao.getAllPokemonByNumberAsc() // Default flow
-    ) { order, _ ->
-        when (order) {
-            SortOrder.NUMBER_ASC -> pokemonDao.getAllPokemonByNumberAsc()
-            SortOrder.NUMBER_DESC -> pokemonDao.getAllPokemonByNumberDesc()
-            SortOrder.NAME_ASC -> pokemonDao.getAllPokemonByNameAsc()
-            SortOrder.NAME_DESC -> pokemonDao.getAllPokemonByNameDesc()
-        }
-    }.stateIn(
-        scope = repositoryScope,
-        started = SharingStarted.WhileSubscribed(5000),
-        initialValue = emptyList()
-    ).let { stateFlow ->
-        combine(sortOrder, stateFlow) { order, _ ->
-            when (order) {
-                SortOrder.NUMBER_ASC -> pokemonDao.getAllPokemonByNumberAsc()
-                SortOrder.NUMBER_DESC -> pokemonDao.getAllPokemonByNumberDesc()
-                SortOrder.NAME_ASC -> pokemonDao.getAllPokemonByNameAsc()
-                SortOrder.NAME_DESC -> pokemonDao.getAllPokemonByNameDesc()
-            }
-        }.let { flow ->
-            combine(flow) { flows -> flows.first() }
-        }.let { flow ->
-            var currentFlow: Flow<List<CachedPokemon>>? = null
-            combine(sortOrder) { order ->
-                val newFlow = when (order.first()) {
-                    SortOrder.NUMBER_ASC -> pokemonDao.getAllPokemonByNumberAsc()
-                    SortOrder.NUMBER_DESC -> pokemonDao.getAllPokemonByNumberDesc()
-                    SortOrder.NAME_ASC -> pokemonDao.getAllPokemonByNameAsc()
-                    SortOrder.NAME_DESC -> pokemonDao.getAllPokemonByNameDesc()
-                }
-                if (currentFlow != newFlow) {
-                    currentFlow = newFlow
-                }
-                currentFlow!!
-            }.let { flows ->
-                combine(sortOrder, flows) { _, flow -> flow }
-            }.let { flow ->
-                // Simplificar el flow
-                combine(sortOrder) { order ->
-                    when (order.first()) {
-                        SortOrder.NUMBER_ASC -> pokemonDao.getAllPokemonByNumberAsc()
-                        SortOrder.NUMBER_DESC -> pokemonDao.getAllPokemonByNumberDesc()
-                        SortOrder.NAME_ASC -> pokemonDao.getAllPokemonByNameAsc()
-                        SortOrder.NAME_DESC -> pokemonDao.getAllPokemonByNameDesc()
-                    }
-                }
-            }
-        }
-    }
 
     // Método simplificado para obtener Pokémon según orden
     fun getPokemonListByOrder(order: SortOrder): Flow<List<CachedPokemon>> {

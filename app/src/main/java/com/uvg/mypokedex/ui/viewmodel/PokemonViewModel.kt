@@ -6,12 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.uvg.mypokedex.data.local.CachedPokemon
 import com.uvg.mypokedex.data.preferences.SortOrder
 import com.uvg.mypokedex.data.repository.PokemonRepository
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
 data class PokemonListUiState(
@@ -26,19 +21,28 @@ class PokemonViewModel(
     private val repository: PokemonRepository
 ) : ViewModel() {
 
-    private val _uiState = MutableStateFlow(PokemonListUiState())
-    val uiState: StateFlow<PokemonListUiState> = _uiState.asStateFlow()
+    private val _isLoading = MutableStateFlow(false)
+    private val _error = MutableStateFlow<String?>(null)
 
     // Combinar todos los flujos en un único estado
     val combinedUiState: StateFlow<PokemonListUiState> = combine(
         repository.sortOrder,
         repository.isConnected,
-        _uiState
-    ) { sortOrder, isConnected, currentState ->
-        currentState.copy(
-            sortOrder = sortOrder,
-            isConnected = isConnected
-        )
+        _isLoading,
+        _error
+    ) { sortOrder, isConnected, isLoading, error ->
+        sortOrder to Triple(isConnected, isLoading, error)
+    }.flatMapLatest { (sortOrder, triple) ->
+        val (isConnected, isLoading, error) = triple
+        repository.getPokemonListByOrder(sortOrder).map { pokemonList ->
+            PokemonListUiState(
+                pokemon = pokemonList,
+                isLoading = isLoading,
+                isConnected = isConnected,
+                sortOrder = sortOrder,
+                error = error
+            )
+        }
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),
@@ -51,28 +55,15 @@ class PokemonViewModel(
 
     private fun loadPokemon() {
         viewModelScope.launch {
-            _uiState.value = _uiState.value.copy(isLoading = true)
+            _isLoading.value = true
 
             try {
                 // Refrescar caché si es necesario
                 repository.refreshCacheIfNeeded()
-
-                // Observar cambios en el orden de clasificación
-                repository.sortOrder.collect { order ->
-                    // Obtener Pokémon según el orden actual
-                    repository.getPokemonListByOrder(order).collect { pokemonList ->
-                        _uiState.value = _uiState.value.copy(
-                            pokemon = pokemonList,
-                            isLoading = false,
-                            error = null
-                        )
-                    }
-                }
+                _isLoading.value = false
             } catch (e: Exception) {
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    error = e.message
-                )
+                _isLoading.value = false
+                _error.value = e.message
             }
         }
     }
@@ -81,36 +72,29 @@ class PokemonViewModel(
         viewModelScope.launch {
             try {
                 repository.saveSortOrder(order)
-                // El flujo se actualizará automáticamente
             } catch (e: Exception) {
-                _uiState.value = _uiState.value.copy(
-                    error = "Error al guardar preferencia: ${e.message}"
-                )
+                _error.value = "Error al guardar preferencia: ${e.message}"
             }
         }
     }
 
     fun refresh() {
         viewModelScope.launch {
-            _uiState.value = _uiState.value.copy(isLoading = true)
+            _isLoading.value = true
 
             try {
                 repository.forceRefresh()
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    error = null
-                )
+                _isLoading.value = false
+                _error.value = null
             } catch (e: Exception) {
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    error = "Error al actualizar: ${e.message}"
-                )
+                _isLoading.value = false
+                _error.value = "Error al actualizar: ${e.message}"
             }
         }
     }
 
     fun clearError() {
-        _uiState.value = _uiState.value.copy(error = null)
+        _error.value = null
     }
 }
 
