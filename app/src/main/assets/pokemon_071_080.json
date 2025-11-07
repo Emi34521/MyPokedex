@@ -1,0 +1,366 @@
+{
+  "range": {
+    "start": 71,
+    "end": 80
+  },
+  "items": [
+    {
+      "id": 71,
+      "name": "victreebel",
+      "type": [
+        "grass",
+        "poison"
+      ],
+      "weight": 15.5,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 105
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "name": "tentacool",
+      "type": [
+        "water",
+        "poison"
+      ],
+      "weight": 45.5,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 40
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "name": "tentacruel",
+      "type": [
+        "water",
+        "poison"
+      ],
+      "weight": 55.0,
+      "height": 1.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 70
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 120
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "name": "geodude",
+      "type": [
+        "rock",
+        "ground"
+      ],
+      "weight": 20.0,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "name": "graveler",
+      "type": [
+        "rock",
+        "ground"
+      ],
+      "weight": 105.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 115
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 45
+        },
+        {
+          "name": "speed",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "name": "golem",
+      "type": [
+        "rock",
+        "ground"
+      ],
+      "weight": 300.0,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 120
+        },
+        {
+          "name": "defense",
+          "value": 130
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "name": "ponyta",
+      "type": [
+        "fire"
+      ],
+      "weight": 30.0,
+      "height": 1.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 85
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "name": "rapidash",
+      "type": [
+        "fire"
+      ],
+      "weight": 95.0,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 105
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "name": "slowpoke",
+      "type": [
+        "water",
+        "psychic"
+      ],
+      "weight": 36.0,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 90
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "slowbro",
+      "type": [
+        "water",
+        "psychic"
+      ],
+      "weight": 78.5,
+      "height": 1.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 95
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 110
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    }
+  ]
+}

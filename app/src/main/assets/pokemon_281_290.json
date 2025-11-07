@@ -1,0 +1,364 @@
+{
+  "range": {
+    "start": 281,
+    "end": 290
+  },
+  "items": [
+    {
+      "id": 281,
+      "name": "kirlia",
+      "type": [
+        "psychic",
+        "fairy"
+      ],
+      "weight": 20.2,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 38
+        },
+        {
+          "name": "attack",
+          "value": 35
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 282,
+      "name": "gardevoir",
+      "type": [
+        "psychic",
+        "fairy"
+      ],
+      "weight": 48.4,
+      "height": 1.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 68
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 125
+        },
+        {
+          "name": "special-defense",
+          "value": 115
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 283,
+      "name": "surskit",
+      "type": [
+        "bug",
+        "water"
+      ],
+      "weight": 1.7,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 30
+        },
+        {
+          "name": "defense",
+          "value": 32
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 52
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 284,
+      "name": "masquerain",
+      "type": [
+        "bug",
+        "flying"
+      ],
+      "weight": 3.6,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 62
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 82
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 285,
+      "name": "shroomish",
+      "type": [
+        "grass"
+      ],
+      "weight": 4.5,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 40
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "breloom",
+      "type": [
+        "grass",
+        "fighting"
+      ],
+      "weight": 39.2,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 130
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "slakoth",
+      "type": [
+        "normal"
+      ],
+      "weight": 24.0,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 288,
+      "name": "vigoroth",
+      "type": [
+        "normal"
+      ],
+      "weight": 46.5,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "slaking",
+      "type": [
+        "normal"
+      ],
+      "weight": 130.5,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 150
+        },
+        {
+          "name": "attack",
+          "value": 160
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "nincada",
+      "type": [
+        "bug",
+        "ground"
+      ],
+      "weight": 5.5,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 31
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "defense",
+          "value": 90
+        },
+        {
+          "name": "special-attack",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    }
+  ]
+}

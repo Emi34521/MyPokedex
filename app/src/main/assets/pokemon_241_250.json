@@ -1,0 +1,363 @@
+{
+  "range": {
+    "start": 241,
+    "end": 250
+  },
+  "items": [
+    {
+      "id": 241,
+      "name": "miltank",
+      "type": [
+        "normal"
+      ],
+      "weight": 75.5,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 95
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 105
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 242,
+      "name": "blissey",
+      "type": [
+        "normal"
+      ],
+      "weight": 46.8,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 255
+        },
+        {
+          "name": "attack",
+          "value": 10
+        },
+        {
+          "name": "defense",
+          "value": 10
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 135
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "name": "raikou",
+      "type": [
+        "electric"
+      ],
+      "weight": 178.0,
+      "height": 1.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 90
+        },
+        {
+          "name": "attack",
+          "value": 85
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "special-attack",
+          "value": 115
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 115
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "name": "entei",
+      "type": [
+        "fire"
+      ],
+      "weight": 198.0,
+      "height": 2.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 115
+        },
+        {
+          "name": "attack",
+          "value": 115
+        },
+        {
+          "name": "defense",
+          "value": 85
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "name": "suicune",
+      "type": [
+        "water"
+      ],
+      "weight": 187.0,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 115
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 115
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 246,
+      "name": "larvitar",
+      "type": [
+        "rock",
+        "ground"
+      ],
+      "weight": 72.0,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 64
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 41
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "name": "pupitar",
+      "type": [
+        "rock",
+        "ground"
+      ],
+      "weight": 152.0,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 84
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 51
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "name": "tyranitar",
+      "type": [
+        "rock",
+        "dark"
+      ],
+      "weight": 202.0,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 134
+        },
+        {
+          "name": "defense",
+          "value": 110
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 61
+        }
+      ]
+    },
+    {
+      "id": 249,
+      "name": "lugia",
+      "type": [
+        "psychic",
+        "flying"
+      ],
+      "weight": 216.0,
+      "height": 5.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 106
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 130
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 154
+        },
+        {
+          "name": "speed",
+          "value": 110
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "name": "ho-oh",
+      "type": [
+        "fire",
+        "flying"
+      ],
+      "weight": 199.0,
+      "height": 3.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 106
+        },
+        {
+          "name": "attack",
+          "value": 130
+        },
+        {
+          "name": "defense",
+          "value": 90
+        },
+        {
+          "name": "special-attack",
+          "value": 110
+        },
+        {
+          "name": "special-defense",
+          "value": 154
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    }
+  ]
+}

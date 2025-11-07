@@ -7,41 +7,38 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.ViewModelProvider
+import com.uvg.mypokedex.ui.screens.PokemonListScreen
 import com.uvg.mypokedex.ui.theme.MyPokedexTheme
+import com.uvg.mypokedex.ui.viewmodel.PokemonViewModel
+import com.uvg.mypokedex.ui.viewmodel.PokemonViewModelFactory
 
 class MainActivity : ComponentActivity() {
+    private lateinit var viewModel: PokemonViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // Obtener el repositorio de la aplicación
+        val app = application as PokemonApplication
+
+        // Crear el ViewModel con el factory
+        viewModel = ViewModelProvider(
+            this,
+            PokemonViewModelFactory(app.pokemonRepository)
+        )[PokemonViewModel::class.java]
+
         enableEdgeToEdge()
         setContent {
             MyPokedexTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                Scaffold(modifier = Modifier.Companion.fillMaxSize()) { innerPadding ->
+                    PokemonListScreen(
+                        viewModel = viewModel,
+                        modifier = Modifier.Companion.padding(innerPadding)
                     )
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MyPokedexTheme {
-        Greeting("Android")
     }
 }

@@ -1,0 +1,359 @@
+{
+  "range": {
+    "start": 231,
+    "end": 240
+  },
+  "items": [
+    {
+      "id": 231,
+      "name": "phanpy",
+      "type": [
+        "ground"
+      ],
+      "weight": 33.5,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 90
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 60
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 232,
+      "name": "donphan",
+      "type": [
+        "ground"
+      ],
+      "weight": 120.0,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 90
+        },
+        {
+          "name": "attack",
+          "value": 120
+        },
+        {
+          "name": "defense",
+          "value": 120
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "name": "porygon2",
+      "type": [
+        "normal"
+      ],
+      "weight": 32.5,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 85
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 90
+        },
+        {
+          "name": "special-attack",
+          "value": 105
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "name": "stantler",
+      "type": [
+        "normal"
+      ],
+      "weight": 71.2,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 73
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 62
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "name": "smeargle",
+      "type": [
+        "normal"
+      ],
+      "weight": 58.0,
+      "height": 1.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 20
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 20
+        },
+        {
+          "name": "special-defense",
+          "value": 45
+        },
+        {
+          "name": "speed",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "id": 236,
+      "name": "tyrogue",
+      "type": [
+        "fighting"
+      ],
+      "weight": 21.0,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 35
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "speed",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": 237,
+      "name": "hitmontop",
+      "type": [
+        "fighting"
+      ],
+      "weight": 48.0,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 95
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 110
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "name": "smoochum",
+      "type": [
+        "ice",
+        "psychic"
+      ],
+      "weight": 6.0,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 30
+        },
+        {
+          "name": "defense",
+          "value": 15
+        },
+        {
+          "name": "special-attack",
+          "value": 85
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "name": "elekid",
+      "type": [
+        "electric"
+      ],
+      "weight": 23.5,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 63
+        },
+        {
+          "name": "defense",
+          "value": 37
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "name": "magby",
+      "type": [
+        "fire"
+      ],
+      "weight": 21.4,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 37
+        },
+        {
+          "name": "special-attack",
+          "value": 70
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 83
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "range": {
+    "start": 381,
+    "end": 390
+  },
+  "items": [
+    {
+      "id": 381,
+      "name": "latios",
+      "type": [
+        "dragon",
+        "psychic"
+      ],
+      "weight": 60.0,
+      "height": 2.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 130
+        },
+        {
+          "name": "special-defense",
+          "value": 110
+        },
+        {
+          "name": "speed",
+          "value": 110
+        }
+      ]
+    },
+    {
+      "id": 382,
+      "name": "kyogre",
+      "type": [
+        "water"
+      ],
+      "weight": 352.0,
+      "height": 4.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 90
+        },
+        {
+          "name": "special-attack",
+          "value": 150
+        },
+        {
+          "name": "special-defense",
+          "value": 140
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 383,
+      "name": "groudon",
+      "type": [
+        "ground"
+      ],
+      "weight": 950.0,
+      "height": 3.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 150
+        },
+        {
+          "name": "defense",
+          "value": 140
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 90
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 384,
+      "name": "rayquaza",
+      "type": [
+        "dragon",
+        "flying"
+      ],
+      "weight": 206.5,
+      "height": 7.0,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 105
+        },
+        {
+          "name": "attack",
+          "value": 150
+        },
+        {
+          "name": "defense",
+          "value": 90
+        },
+        {
+          "name": "special-attack",
+          "value": 150
+        },
+        {
+          "name": "special-defense",
+          "value": 90
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 385,
+      "name": "jirachi",
+      "type": [
+        "steel",
+        "psychic"
+      ],
+      "weight": 1.1,
+      "height": 0.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "id": 386,
+      "name": "deoxys-normal",
+      "type": [
+        "psychic"
+      ],
+      "weight": 60.8,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 150
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 150
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 150
+        }
+      ]
+    },
+    {
+      "id": 387,
+      "name": "turtwig",
+      "type": [
+        "grass"
+      ],
+      "weight": 10.2,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 68
+        },
+        {
+          "name": "defense",
+          "value": 64
+        },
+        {
+          "name": "special-attack",
+          "value": 45
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 31
+        }
+      ]
+    },
+    {
+      "id": 388,
+      "name": "grotle",
+      "type": [
+        "grass"
+      ],
+      "weight": 97.0,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 89
+        },
+        {
+          "name": "defense",
+          "value": 85
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 65
+        },
+        {
+          "name": "speed",
+          "value": 36
+        }
+      ]
+    },
+    {
+      "id": 389,
+      "name": "torterra",
+      "type": [
+        "grass",
+        "ground"
+      ],
+      "weight": 310.0,
+      "height": 2.2,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 95
+        },
+        {
+          "name": "attack",
+          "value": 109
+        },
+        {
+          "name": "defense",
+          "value": 105
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 56
+        }
+      ]
+    },
+    {
+      "id": 390,
+      "name": "chimchar",
+      "type": [
+        "fire"
+      ],
+      "weight": 6.2,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 44
+        },
+        {
+          "name": "attack",
+          "value": 58
+        },
+        {
+          "name": "defense",
+          "value": 44
+        },
+        {
+          "name": "special-attack",
+          "value": 58
+        },
+        {
+          "name": "special-defense",
+          "value": 44
+        },
+        {
+          "name": "speed",
+          "value": 61
+        }
+      ]
+    }
+  ]
+}

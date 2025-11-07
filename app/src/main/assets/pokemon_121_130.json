@@ -1,0 +1,363 @@
+{
+  "range": {
+    "start": 121,
+    "end": 130
+  },
+  "items": [
+    {
+      "id": 121,
+      "name": "starmie",
+      "type": [
+        "water",
+        "psychic"
+      ],
+      "weight": 80.0,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 75
+        },
+        {
+          "name": "defense",
+          "value": 85
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 115
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "name": "mr-mime",
+      "type": [
+        "psychic",
+        "fairy"
+      ],
+      "weight": 54.5,
+      "height": 1.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 45
+        },
+        {
+          "name": "defense",
+          "value": 65
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 120
+        },
+        {
+          "name": "speed",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "name": "scyther",
+      "type": [
+        "bug",
+        "flying"
+      ],
+      "weight": 56.0,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 110
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 105
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "name": "jynx",
+      "type": [
+        "ice",
+        "psychic"
+      ],
+      "weight": 40.6,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 115
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "name": "electabuzz",
+      "type": [
+        "electric"
+      ],
+      "weight": 30.0,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 83
+        },
+        {
+          "name": "defense",
+          "value": 57
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 105
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "name": "magmar",
+      "type": [
+        "fire"
+      ],
+      "weight": 44.5,
+      "height": 1.3,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 57
+        },
+        {
+          "name": "special-attack",
+          "value": 100
+        },
+        {
+          "name": "special-defense",
+          "value": 85
+        },
+        {
+          "name": "speed",
+          "value": 93
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "name": "pinsir",
+      "type": [
+        "bug"
+      ],
+      "weight": 55.0,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 125
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "name": "tauros",
+      "type": [
+        "normal"
+      ],
+      "weight": 88.4,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 95
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 110
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "name": "magikarp",
+      "type": [
+        "water"
+      ],
+      "weight": 10.0,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 20
+        },
+        {
+          "name": "attack",
+          "value": 10
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 15
+        },
+        {
+          "name": "special-defense",
+          "value": 20
+        },
+        {
+          "name": "speed",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "name": "gyarados",
+      "type": [
+        "water",
+        "flying"
+      ],
+      "weight": 235.0,
+      "height": 6.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 95
+        },
+        {
+          "name": "attack",
+          "value": 125
+        },
+        {
+          "name": "defense",
+          "value": 79
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 100
+        },
+        {
+          "name": "speed",
+          "value": 81
+        }
+      ]
+    }
+  ]
+}

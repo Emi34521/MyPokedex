@@ -1,0 +1,365 @@
+{
+  "range": {
+    "start": 211,
+    "end": 220
+  },
+  "items": [
+    {
+      "id": 211,
+      "name": "qwilfish",
+      "type": [
+        "water",
+        "poison"
+      ],
+      "weight": 3.9,
+      "height": 0.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 85
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 55
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 212,
+      "name": "scizor",
+      "type": [
+        "bug",
+        "steel"
+      ],
+      "weight": 118.0,
+      "height": 1.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 70
+        },
+        {
+          "name": "attack",
+          "value": 130
+        },
+        {
+          "name": "defense",
+          "value": 100
+        },
+        {
+          "name": "special-attack",
+          "value": 55
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "name": "shuckle",
+      "type": [
+        "bug",
+        "rock"
+      ],
+      "weight": 20.5,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 20
+        },
+        {
+          "name": "attack",
+          "value": 10
+        },
+        {
+          "name": "defense",
+          "value": 230
+        },
+        {
+          "name": "special-attack",
+          "value": 10
+        },
+        {
+          "name": "special-defense",
+          "value": 230
+        },
+        {
+          "name": "speed",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": 214,
+      "name": "heracross",
+      "type": [
+        "bug",
+        "fighting"
+      ],
+      "weight": 54.0,
+      "height": 1.5,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 80
+        },
+        {
+          "name": "attack",
+          "value": 125
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "id": 215,
+      "name": "sneasel",
+      "type": [
+        "dark",
+        "ice"
+      ],
+      "weight": 28.0,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 55
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 55
+        },
+        {
+          "name": "special-attack",
+          "value": 35
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 115
+        }
+      ]
+    },
+    {
+      "id": 216,
+      "name": "teddiursa",
+      "type": [
+        "normal"
+      ],
+      "weight": 8.8,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 50
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": 217,
+      "name": "ursaring",
+      "type": [
+        "normal"
+      ],
+      "weight": 125.8,
+      "height": 1.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 90
+        },
+        {
+          "name": "attack",
+          "value": 130
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "special-attack",
+          "value": 75
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "id": 218,
+      "name": "slugma",
+      "type": [
+        "fire"
+      ],
+      "weight": 35.0,
+      "height": 0.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 40
+        },
+        {
+          "name": "attack",
+          "value": 40
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 70
+        },
+        {
+          "name": "special-defense",
+          "value": 40
+        },
+        {
+          "name": "speed",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": 219,
+      "name": "magcargo",
+      "type": [
+        "fire",
+        "rock"
+      ],
+      "weight": 55.0,
+      "height": 0.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 60
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 120
+        },
+        {
+          "name": "special-attack",
+          "value": 90
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "name": "swinub",
+      "type": [
+        "ice",
+        "ground"
+      ],
+      "weight": 6.5,
+      "height": 0.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 50
+        },
+        {
+          "name": "attack",
+          "value": 50
+        },
+        {
+          "name": "defense",
+          "value": 40
+        },
+        {
+          "name": "special-attack",
+          "value": 30
+        },
+        {
+          "name": "special-defense",
+          "value": 30
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    }
+  ]
+}

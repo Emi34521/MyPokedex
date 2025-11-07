@@ -1,0 +1,366 @@
+{
+  "range": {
+    "start": 221,
+    "end": 230
+  },
+  "items": [
+    {
+      "id": 221,
+      "name": "piloswine",
+      "type": [
+        "ice",
+        "ground"
+      ],
+      "weight": 55.8,
+      "height": 1.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 100
+        },
+        {
+          "name": "attack",
+          "value": 100
+        },
+        {
+          "name": "defense",
+          "value": 80
+        },
+        {
+          "name": "special-attack",
+          "value": 60
+        },
+        {
+          "name": "special-defense",
+          "value": 60
+        },
+        {
+          "name": "speed",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "name": "corsola",
+      "type": [
+        "water",
+        "rock"
+      ],
+      "weight": 5.0,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 95
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "remoraid",
+      "type": [
+        "water"
+      ],
+      "weight": 12.0,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 35
+        },
+        {
+          "name": "attack",
+          "value": 65
+        },
+        {
+          "name": "defense",
+          "value": 35
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 35
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "name": "octillery",
+      "type": [
+        "water"
+      ],
+      "weight": 28.5,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 105
+        },
+        {
+          "name": "defense",
+          "value": 75
+        },
+        {
+          "name": "special-attack",
+          "value": 105
+        },
+        {
+          "name": "special-defense",
+          "value": 75
+        },
+        {
+          "name": "speed",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "id": 225,
+      "name": "delibird",
+      "type": [
+        "ice",
+        "flying"
+      ],
+      "weight": 16.0,
+      "height": 0.9,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 55
+        },
+        {
+          "name": "defense",
+          "value": 45
+        },
+        {
+          "name": "special-attack",
+          "value": 65
+        },
+        {
+          "name": "special-defense",
+          "value": 45
+        },
+        {
+          "name": "speed",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "id": 226,
+      "name": "mantine",
+      "type": [
+        "water",
+        "flying"
+      ],
+      "weight": 220.0,
+      "height": 2.1,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 85
+        },
+        {
+          "name": "attack",
+          "value": 40
+        },
+        {
+          "name": "defense",
+          "value": 70
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 140
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "name": "skarmory",
+      "type": [
+        "steel",
+        "flying"
+      ],
+      "weight": 50.5,
+      "height": 1.7,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 65
+        },
+        {
+          "name": "attack",
+          "value": 80
+        },
+        {
+          "name": "defense",
+          "value": 140
+        },
+        {
+          "name": "special-attack",
+          "value": 40
+        },
+        {
+          "name": "special-defense",
+          "value": 70
+        },
+        {
+          "name": "speed",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "name": "houndour",
+      "type": [
+        "dark",
+        "fire"
+      ],
+      "weight": 10.8,
+      "height": 0.6,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 45
+        },
+        {
+          "name": "attack",
+          "value": 60
+        },
+        {
+          "name": "defense",
+          "value": 30
+        },
+        {
+          "name": "special-attack",
+          "value": 80
+        },
+        {
+          "name": "special-defense",
+          "value": 50
+        },
+        {
+          "name": "speed",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "id": 229,
+      "name": "houndoom",
+      "type": [
+        "dark",
+        "fire"
+      ],
+      "weight": 35.0,
+      "height": 1.4,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 90
+        },
+        {
+          "name": "defense",
+          "value": 50
+        },
+        {
+          "name": "special-attack",
+          "value": 110
+        },
+        {
+          "name": "special-defense",
+          "value": 80
+        },
+        {
+          "name": "speed",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "name": "kingdra",
+      "type": [
+        "water",
+        "dragon"
+      ],
+      "weight": 152.0,
+      "height": 1.8,
+      "stats": [
+        {
+          "name": "hp",
+          "value": 75
+        },
+        {
+          "name": "attack",
+          "value": 95
+        },
+        {
+          "name": "defense",
+          "value": 95
+        },
+        {
+          "name": "special-attack",
+          "value": 95
+        },
+        {
+          "name": "special-defense",
+          "value": 95
+        },
+        {
+          "name": "speed",
+          "value": 85
+        }
+      ]
+    }
+  ]
+}
