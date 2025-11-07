@@ -25,7 +25,7 @@ abstract class PokemonDatabase : RoomDatabase() {
                     PokemonDatabase::class.java,
                     "pokemon_database"
                 )
-                    .fallbackToDestructiveMigration()
+                    .fallbackToDestructiveMigration(false)
                     .build()
                 INSTANCE = instance
                 instance
