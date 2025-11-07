@@ -19,9 +19,8 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Refresh
-import androidx.compose.material.icons.filled.Sort
-import androidx.compose.material.icons.filled.WifiOff
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -84,7 +83,7 @@ fun PokemonListScreen(
                     // Indicador de conexión
                     if (!uiState.isConnected) {
                         Icon(
-                            imageVector = Icons.Default.WifiOff,
+                            imageVector = Icons.Default.Close,
                             contentDescription = "Sin conexión",
                             tint = Color.Red,
                             modifier = Modifier.padding(end = 8.dp)
@@ -95,7 +94,7 @@ fun PokemonListScreen(
                     Box {
                         IconButton(onClick = { showSortMenu = true }) {
                             Icon(
-                                imageVector = Icons.Default.Sort,
+                                imageVector = Icons.Default.Refresh,
                                 contentDescription = "Ordenar"
                             )
                         }

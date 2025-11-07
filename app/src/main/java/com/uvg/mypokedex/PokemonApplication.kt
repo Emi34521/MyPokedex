@@ -2,7 +2,6 @@ package com.uvg.mypokedex
 
 import android.app.Application
 import com.uvg.mypokedex.data.local.PokemonDatabase
-import com.uvg.mypokedex.data.network.PokemonApiService
 import com.uvg.mypokedex.data.network.RetrofitInstance
 import com.uvg.mypokedex.data.preferences.UserPreferencesRepository
 import com.uvg.mypokedex.data.repository.PokemonRepository
